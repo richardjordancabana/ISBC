@@ -1,0 +1,38 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<body> 
+
+<br>Sentiment Analysis:
+
+<form method="post" action="API_request.php" >
+<br>
+Analize (@username, #hashtag)
+<br>
+<input type="Text" name="analize" >
+<br>
+
+<br>
+Type
+<select name="type">
+<option value="0" selected>(please select:)</option>
+<option value="username">@Username</option>
+<option value="mention">@Mention</option>
+<option value="hashtag">#Hashtag</option>
+</select>
+<br>
+
+<br>
+Limit (the first N-tweets will be analized)
+<br>
+<input type="Text" name="limit" >
+<br>
+
+<input type="Submit" name="enviar" value="Send">
+</form>
+
+</body>
+</html>
