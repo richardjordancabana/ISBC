@@ -1,7 +1,12 @@
 <?php
 header('Content-Type: text/html; charset=UTF-8');
 ini_set('display_errors', 1);
+//twitter
 require_once('TwitterAPIExchange.php');
+//lexicón
+require_once 'procesamiento.php';	
+//gráfico
+require_once 'graph.php';
 
 $settings = array(
     'oauth_access_token' => "321651149-3WDJN7geliDPmQSlO7TWDuOK8cAFgtKYQQFh2Tz1",
@@ -11,21 +16,19 @@ $settings = array(
     );
 
 ini_set('max_execution_time', 500);
-$num_tweets = 1;
-
 
 $analize = $_POST['analize'];//tr: jesus_pkmd,RicTheImpaler,#LeyAnti15M
 $type = $_POST['type'];
 $limit = $_POST['limit'];
 
-
-//$analize = "@jesus_pkmd";//tr: jesus_pkmd,RicTheImpaler,#LeyAnti15M
-//$type = "username";
-//$limit = "200";
-
-//$user_name = 'jesus_pkmd';
-
-
+$lexicon = cargar("lexicon.txt");
+$num_tweets = 0;
+$num_pos = 0;
+$num_neg = 0;
+$num_neutro = 0;
+$valor_total = 0;
+$lista_tweets = '';
+$cont_pags = 0;
 
 do{
     if(isset($tweet['id_str'])){
@@ -34,14 +37,34 @@ do{
     else{
         $tweets = getTweets($settings,$analize,$type);
     }
-
     foreach($tweets as $tweet) {
-        echo $num_tweets.' '.$tweet['text'];
-        echo "<br>";
-        $num_tweets++;
+		$valor = calculaValor($lexicon, $tweet['text']);
+		if ($valor > 0) { //Tweet Positivo
+			$num_pos ++;
+		}
+		else if ($valor < 0) { //Tweet Negativo
+			$num_neg ++;
+		}
+		else { //Tweet Neutro
+			$num_neutro ++;
+		}
+		$valor_total = $valor_total + $valor; //Cálculo del valor total
+		$lista_tweets .= $num_tweets+1 .' ['.$valor.'] '.$tweet['text']."<br>";
+        $num_tweets++;		
     }
+	$cont_pags++;
 }while(isset($tweet['id_str']) && $num_tweets<=$limit);
 
+//ECHOS/////////////////
+echo "<br>".'Cargados '.$num_tweets.' tweets de '.$cont_pags.' paginas.'."<br>"."<br>";
+echo 'Numero de Tweets positivos: '.$num_pos."<br>";
+echo 'Numero de Tweets negativos: '.$num_neg."<br>";
+echo 'Numero de Tweets neutros: '.$num_neutro."<br>";
+echo 'Valor total: '.$valor_total."<br>";
+echo drawChart($num_pos, $num_neg, $num_neutro);
+echo 'Lista de tweets cargados: '."<br>";
+echo $lista_tweets;
+////////////////////////
 
 
 /** Perform a GET request and echo the response **/
@@ -73,4 +96,14 @@ function getTweets($settings,$name,$type,$maxid=''){
     
 }
 
+// devuelve el valor del tweet
+function calculaValor($lexicon, $tweet){
+	$palabras = explode(" ", $tweet);
+	$valor = 0;
+	$contador = count($palabras);
+	for($i=0; $i < $contador; $i++){
+		$valor += consultar($lexicon, $palabras[$i]);
+	}
+	return $valor;
+}
 ?>

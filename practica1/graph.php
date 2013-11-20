@@ -1,45 +1,21 @@
-<html>
-  <head>
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-
-      // Load the Visualization API and the piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['Positivos', 5],
-          ['Negativos', 2],
-          ['Neutrales', 3]
-       
-        ]);
-
-        // Set chart options
-        var options = {'title':'Resultados del análisis',   //titulo del gráfico 
-                       'width':1200,						//ancho
-                       'height':1200};						//alto 
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-
-  <body>
-    <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
-  </body>
-</html>
+<?php
+// devuelve un código html/javascript con el dibujo de las estadísticas
+ function drawChart($pos, $neg, $neutro){
+	$codigo = '<html>'."\n".'<head>'."\n";
+	$codigo .= '<script type="text/javascript" src="https://www.google.com/jsapi"></script>'."\n";
+	$codigo .= '<script type="text/javascript">'."\n";
+	$codigo .= 'google.load(\'visualization\', \'1.0\', {\'packages\':[\'corechart\']});'."\n";
+	$codigo .= 'google.setOnLoadCallback(drawChart);'."\n";
+	$codigo .= 'function drawChart() {'."\n";
+	$codigo .= 'var data = new google.visualization.DataTable();'."\n";
+	$codigo .= 'data.addColumn(\'string\', \'Topping\');'."\n";
+	$codigo .= 'data.addColumn(\'number\', \'Slices\');'."\n";
+	$codigo .= 'data.addRows([[\'Positivos\', '.$pos.'],[\'Negativos\', '.$neg.'],[\'Neutrales\', '.$neutro.']]);'."\n";
+	$codigo .= 'var options = {\'title\':\'Resultados del analisis\', \'width\':800, \'height\':500};'."\n";
+	$codigo .= 'var chart = new google.visualization.PieChart(document.getElementById(\'chart_div\'));'."\n";
+	$codigo .= 'chart.draw(data, options);'."\n";
+	$codigo .= '}'."\n";
+	$codigo .= '</script>'."\n".'</head>'."\n".'<body>'."\n".'<div id="chart_div"></div>'."\n".'</body>'."\n".'</html>'."\n";
+	return $codigo;
+}
+?>
