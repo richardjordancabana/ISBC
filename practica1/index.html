@@ -13,13 +13,25 @@
 
 <!-- This makes HTML5 elements work in IE 6-8 -->
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+<SCRIPT TYPE="text/javascript">
+	
+	function valid(menu) {
+		if(menu.selectedIndex == 0) {
+			alert('You must make a selection from the type');
+			return false;
+		} 
+	}
+
+</SCRIPT>
 </head>
 
 <body>
 
 <h2 id="first">Sentiment Analysis</h2>
 
-<form method="post" action="API_request.php" >
+<form method="post" action="API_request.php" onsubmit="return valid(this.type)" >
 <br>
 <h3>Analize</h3>
 <input type="Text" name="analize" placeholder="@username, #hashtag">
