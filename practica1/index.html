@@ -1,36 +1,43 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
-<html>
-<body> 
+<!--[if IE 7 ]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Sentiment Analysis</title>
+<link rel="stylesheet" media="screen" href="style.css" />
 
-<br>Sentiment Analysis:
+<!-- This is for mobile devices -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+
+<!-- This makes HTML5 elements work in IE 6-8 -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<h2 id="first">Sentiment Analysis</h2>
 
 <form method="post" action="API_request.php" >
 <br>
-Analize (@username, #hashtag)
+<h3>Analize</h3>
+<input type="Text" name="analize" placeholder="@username, #hashtag">
 <br>
-<input type="Text" name="analize" >
 <br>
-
-<br>
-Type
+<h3>Type</h3>
 <select name="type">
-<option value="0" selected>(please select:)</option>
+<option value="0" selected>please select:</option>
 <option value="username">@Username</option>
 <option value="mention">@Mention</option>
 <option value="hashtag">#Hashtag</option>
 </select>
 <br>
-
 <br>
-Limit (the first N-tweets will be analized)
+<h3>Limit</h3> 
+<input type="Text" name="limit" placeholder="Nº of tweets analized" >
 <br>
-<input type="Text" name="limit" >
 <br>
-
 <input type="Submit" name="enviar" value="Send">
 </form>
 
