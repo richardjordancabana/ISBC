@@ -47,14 +47,21 @@ public class Conector {
 		Iterator<String> it = ontologia.listInstances(clase);
 		while (it.hasNext()){
 			String nombre = it.next();
-			lista.add(parser_nombre(nombre));	
+			lista.add(recortarNombre(nombre));	
 		}
 		return lista;
 	}
 	
 	//parsea el nombre del string(foto)
-		private String parser_nombre(String string) {
+		private String recortarNombre(String string) {
 			return string.substring(string.indexOf('#')+1);
+		}
+		
+		//obtiene la url de la foto
+		public String getUrl(String imagen) {
+			String string = ontologia.listPropertyValue(imagen,"urlFoto").next();
+			String url=string.substring(0,string.indexOf("^^"));
+			return url ;
 		}
 		
 		
@@ -95,7 +102,7 @@ public class Conector {
 			Iterator<String> it = ontologia.listPropertyValue(imagen,propiedad);
 			while (it.hasNext()){
 				String nombre = it.next();
-				nombre = parser_nombre(nombre);
+				nombre = recortarNombre(nombre);
 				datos.add(nombre);	
 			}
 			return datos;
@@ -111,7 +118,7 @@ public class Conector {
 		    	Iterator<String> familiares =  ontologia.listPropertyValue(imagen,"aparece_en");
 		    	boolean parar = false;	int numFamiliares = 0;
 		    	while (familiares.hasNext() && !parar){
-		    		String nombreFamiliar = parser_nombre(it.next());
+		    		String nombreFamiliar = recortarNombre(it.next());
 		    		if (ontologia.existsInstance(nombreFamiliar,"Familia"))
 		    			numFamiliares++;
 		    		if (numFamiliares >= 3)
@@ -119,7 +126,7 @@ public class Conector {
 		    	}
 		    	
 		    	if (parar)
-		    		img.add(parser_nombre(imagen));
+		    		img.add(recortarNombre(imagen));
 		    }	    
 		    return img;
 		}
@@ -132,11 +139,11 @@ public class Conector {
 		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
 		    	boolean rey = false;
 		    	while (personajes.hasNext() && !rey){
-		    		String nombre= parser_nombre(personajes.next());
+		    		String nombre= recortarNombre(personajes.next());
 		    		rey = nombre.equals("Juan_Carlos_I");//si es el rey paramos la busqueda
 		    	}
 		    	if (rey)
-		    		img.add(parser_nombre(imagen));
+		    		img.add(recortarNombre(imagen));
 		    }	    
 		    return img;
 		}
@@ -149,11 +156,11 @@ public class Conector {
 		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"esta_en");
 		    	boolean despacho = false;
 		    	while (personajes.hasNext() && !despacho){
-		    		String lugar = parser_nombre(personajes.next());
+		    		String lugar = recortarNombre(personajes.next());
 		    		despacho = lugar.equals("Despacho");
 		    	}
 		    	if (despacho)
-		    		img.add(parser_nombre(imagen));
+		    		img.add(recortarNombre(imagen));
 		    }	    
 		    return img;
 		}
@@ -166,21 +173,39 @@ public class Conector {
 		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
 	 	    	List<String> personajesFoto = new ArrayList<String>();
 	 	    	while (personajes.hasNext()){
-	 	    		String persona = parser_nombre(personajes.next());
+	 	    		String persona = recortarNombre(personajes.next());
 	 	    		personajesFoto.add(persona);
 	 	    		Iterator<String> itParejas = ontologia.listPropertyValue(persona,"tiene_pareja");
 	 	    		boolean hayPareja = false;
 	 	    		while (itParejas.hasNext() && !hayPareja){
-	 	    			String pareja = parser_nombre(itParejas.next());
+	 	    			String pareja = recortarNombre(itParejas.next());
 	 	    			hayPareja = hayPareja || personajesFoto.contains(pareja);
 	 	    		}
-	 	    		String nombreImagen =parser_nombre(imagen);
+	 	    		String nombreImagen =recortarNombre(imagen);
 	 	    		if (hayPareja && !(img.contains(nombreImagen)))
 	 	    			img.add(nombreImagen);
 	 	    	}
 	 	    	
 		    }
 		   return img	;	}
+		
+		
+		public List<String> getFotoPropiedad(String valor, String propiedad){
+			List<String> fotos = new ArrayList<String>();
+		    Iterator<String> iteradorFotos = ontologia.listInstances("Foto");
+		    while (iteradorFotos.hasNext()){
+		    	String foto = iteradorFotos.next();
+		    	Iterator<String> iteradorPropiedad =  ontologia.listPropertyValue(foto,propiedad);
+		    	boolean esValor = false;
+		    	while (iteradorPropiedad.hasNext() && !esValor){
+		    		String val = recortarNombre(iteradorPropiedad.next());
+		    		esValor = val.equals(valor);
+		    	}
+		    	if (esValor || valor.equals(""))
+		    		fotos.add(recortarNombre(foto));
+		    }
+		    return fotos;
+		}		
 		
 		
 }
