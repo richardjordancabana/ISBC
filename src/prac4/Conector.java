@@ -31,6 +31,8 @@ public class Conector {
 		return new PnlSelectInstance(ontologia);
 	}
 	
+	
+	
 	//devuelve las instancias de la clase Persona
 	public List<String> getPersonas() {
 		List<String> personas = new ArrayList<String>();
@@ -64,7 +66,69 @@ public class Conector {
 			return url ;
 		}
 		
+		public List<String> getPropiedadImagen(String valor, String propiedad){
+			List<String> img = new ArrayList<String>();
+		    Iterator<String> iteradorFotos = ontologia.listInstances("Foto");
+		    while (iteradorFotos.hasNext()){
+		    	String imagen = iteradorFotos.next();
+		    	Iterator<String> propiedades =  ontologia.listPropertyValue(imagen,propiedad);
+		    	boolean coincide = false;
+		    	while (propiedades.hasNext() && !coincide){
+		    		String prop = recortarNombre(propiedades.next());
+		    	
+		    		if(prop.equals(valor))
+		    		coincide = true;
+		    		else coincide =false;
+		    		
+		    	}
+		    	if (coincide )
+		    		img.add(recortarNombre(imagen));
+		    /*	if(valor.equals(""))
+		    		img.add(recortarNombre(imagen)); */
+		    }
+		    return img;
+		}		
 		
+		public List<String> getImagenesConsulta(String valor, String propiedad){
+			List<String> img = new ArrayList<String>();
+		    Iterator<String> it = ontologia.listInstances("Foto");
+		    while (it.hasNext()){
+		    	String imagen = it.next();
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	boolean coincide = false;
+		    	while (personajes.hasNext() && !coincide){
+		    		String persona = recortarNombre(personajes.next());
+	 	    		Iterator<String> itTitulos = ontologia.listPropertyValue(persona,propiedad);
+	 	    		boolean encontrado = false;
+	 	    		while (itTitulos.hasNext() && !encontrado){
+	 	    			String titulo = recortarNombre(itTitulos.next());
+	 	    			encontrado = titulo.equals(valor);
+	 	    			coincide = encontrado;
+	 	    		}
+		    	}
+		    	if (coincide )
+		    		img.add(recortarNombre(imagen));
+		    	/*	if(valor.equals(""))
+	    		img.add(recortarNombre(imagen)); */
+		    }
+		    return img;
+		}
+		
+		public List<String> getInfoPersonal(String cargo,String persona,String lugar){
+						
+			List<String> lugares = getPropiedadImagen(lugar,"esta_en");
+			List<String> personas = getPropiedadImagen(persona,"aparece_en");
+			List<String> cargos = getImagenesConsulta(cargo,"tiene_titulo_de");	
+			Iterator<String> itImagenes = ontologia.listInstances("Foto");
+			List<String> imagenes = new ArrayList<String>();
+			while (itImagenes.hasNext()){
+			    	String imagen = recortarNombre(itImagenes.next());
+			    	if (lugares.contains(imagen) && personas.contains(imagen) && cargos.contains(imagen))
+			    		imagenes.add(imagen);
+			 }
+			
+			return imagenes;
+		}		
 		
 /*	
  *  LUGARES?!!
@@ -118,7 +182,7 @@ public class Conector {
 		    	Iterator<String> familiares =  ontologia.listPropertyValue(imagen,"aparece_en");
 		    	boolean parar = false;	int numFamiliares = 0;
 		    	while (familiares.hasNext() && !parar){
-		    		String nombreFamiliar = recortarNombre(it.next());
+		    		String nombreFamiliar = recortarNombre(familiares.next());
 		    		if (ontologia.existsInstance(nombreFamiliar,"Familia"))
 		    			numFamiliares++;
 		    		if (numFamiliares >= 3)
@@ -214,53 +278,7 @@ public class Conector {
 		    }
 		   return img	;	
 		}	
-		public List<String> getPropiedadImagen(String valor, String propiedad){
-			List<String> img = new ArrayList<String>();
-		    Iterator<String> iteradorFotos = ontologia.listInstances("Foto");
-		    while (iteradorFotos.hasNext()){
-		    	String imagen = iteradorFotos.next();
-		    	Iterator<String> propiedades =  ontologia.listPropertyValue(imagen,propiedad);
-		    	boolean coincide = false;
-		    	while (propiedades.hasNext() && !coincide){
-		    		String prop = recortarNombre(propiedades.next());
-		    	
-		    		if(prop.equals(valor))
-		    		coincide = true;
-		    		else coincide =false;
-		    		
-		    	}
-		    	if (coincide )
-		    		img.add(recortarNombre(imagen));
-		    /*	if(valor.equals(""))
-		    		img.add(recortarNombre(imagen)); */
-		    }
-		    return img;
-		}		
-		
-		public List<String> getFotosTitulo(String valor, String propiedad){
-			List<String> img = new ArrayList<String>();
-		    Iterator<String> it = ontologia.listInstances("Foto");
-		    while (it.hasNext()){
-		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
-		    	boolean coincide = false;
-		    	while (personajes.hasNext() && !coincide){
-		    		String persona = recortarNombre(personajes.next());
-	 	    		Iterator<String> itTitulos = ontologia.listPropertyValue(persona,propiedad);
-	 	    		boolean encontrado = false;
-	 	    		while (itTitulos.hasNext() && !encontrado){
-	 	    			String titulo = recortarNombre(itTitulos.next());
-	 	    			encontrado = titulo.equals(valor);
-	 	    			coincide = encontrado;
-	 	    		}
-		    	}
-		    	if (coincide )
-		    		img.add(recortarNombre(imagen));
-		    	/*	if(valor.equals(""))
-	    		img.add(recortarNombre(imagen)); */
-		    }
-		    return img;
-		}
+	
 		
 		
 }
