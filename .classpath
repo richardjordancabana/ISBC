@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="ontobridge.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="libs/aterm-java-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ontobridge.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/pellet.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/servlet.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
