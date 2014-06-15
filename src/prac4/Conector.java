@@ -118,7 +118,7 @@ public class Conector {
 		    	Iterator<String> familiares =  ontologia.listPropertyValue(imagen,"aparece_en");
 		    	boolean parar = false;	int numFamiliares = 0;
 		    	while (familiares.hasNext() && !parar){
-		    		String nombreFamiliar = recortarNombre(it.next());
+		    		String nombreFamiliar = recortarNombre(familiares.next());
 		    		if (ontologia.existsInstance(nombreFamiliar,"Familia"))
 		    			numFamiliares++;
 		    		if (numFamiliares >= 3)
