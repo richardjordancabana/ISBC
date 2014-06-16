@@ -235,71 +235,263 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <owl:inverseOf rdf:resource="#pareja_de"/>
   </owl:SymmetricProperty>
-  <Ubicacion rdf:ID="Ubicacion_63"/>
-  <tituloNobiliario rdf:ID="Rey"/>
-  <Ubicacion rdf:ID="Otros"/>
-  <Ubicacion rdf:ID="Acto_Oficial"/>
-  <tituloNobiliario rdf:ID="Principe"/>
-  <tituloNobiliario rdf:ID="Princesa"/>
-  <Ubicacion rdf:ID="Despacho"/>
-  <tituloNobiliario rdf:ID="Infanta"/>
-  <Foto rdf:ID="Foto_1">
+  <Foto rdf:ID="Foto6">
     <aparece>
-      <Familia rdf:ID="Irene_Urdangarin"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Letizia_Ortiz"/>
-    </aparece>
-    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >./fotos/Foto1.jpg</urlFoto>
-    <aparece>
-      <Familia rdf:ID="Miguel_Urdangarin"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Cristina_Borbon"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Jaime_Marichalar"/>
-    </aparece>
-    <lugarFoto>
-      <Ubicacion rdf:ID="Palacio"/>
-    </lugarFoto>
-    <aparece>
-      <Familia rdf:ID="Victoria_Marichalar"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Sofia_Grecia"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Elena_Borbon"/>
+      <Familia rdf:ID="Juan_Urdangarin"/>
     </aparece>
     <aparece>
       <Familia rdf:ID="Sofia_Borbon"/>
     </aparece>
     <aparece>
-      <Familia rdf:ID="Juan_Urdangarin"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Felipe_Borbon"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Juan_Carlos_I"/>
-    </aparece>
-    <aparece>
       <Familia rdf:ID="Leonor_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Victoria_Marichalar"/>
+    </aparece>
+    <lugarFoto>
+      <Ubicacion rdf:ID="Palacio"/>
+    </lugarFoto>
+    <aparece>
+      <Familia rdf:ID="Miguel_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Irene_Urdangarin"/>
     </aparece>
     <aparece>
       <Familia rdf:ID="Pablo_Urdangarin"/>
     </aparece>
-    <aparece>
-      <Familia rdf:ID="Iñaki_Urdangarin"/>
-    </aparece>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto6.jpg</urlFoto>
     <aparece>
       <Familia rdf:ID="Felipe_Marichalar"/>
     </aparece>
   </Foto>
+  <Foto rdf:ID="Foto17">
+    <lugarFoto>
+      <Ubicacion rdf:ID="Despacho"/>
+    </lugarFoto>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto17.JPG</urlFoto>
+    <aparece>
+      <Familia rdf:ID="Juan_Carlos_I"/>
+    </aparece>
+  </Foto>
+  <tituloNobiliario rdf:ID="Rey"/>
+  <Foto rdf:ID="Foto7">
+    <aparece>
+      <Familia rdf:ID="Felipe_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Letizia_Ortiz"/>
+    </aparece>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece>
+      <Familia rdf:ID="Sofia_Grecia"/>
+    </aparece>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >.fotos/foto7.png</urlFoto>
+    <lugarFoto>
+      <Ubicacion rdf:ID="Acto_Oficial"/>
+    </lugarFoto>
+  </Foto>
+  <Foto rdf:ID="Foto10">
+    <lugarFoto rdf:resource="#Despacho"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto10.png</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto20">
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto20.jpg</urlFoto>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <lugarFoto rdf:resource="#Acto_Oficial"/>
+  </Foto>
+  <tituloNobiliario rdf:ID="Principe"/>
+  <tituloNobiliario rdf:ID="Princesa"/>
+  <Foto rdf:ID="Foto4">
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto4.jpg</urlFoto>
+    <lugarFoto rdf:resource="#Acto_Oficial"/>
+  </Foto>
+  <Foto rdf:ID="Foto15">
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece>
+      <Familia rdf:ID="Cristina_Borbon"/>
+    </aparece>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece>
+      <Familia rdf:ID="Elena_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Iñaki_Urdangarin"/>
+    </aparece>
+    <lugarFoto>
+      <Ubicacion rdf:ID="Otros"/>
+    </lugarFoto>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto15.jpg</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto21">
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto21.jpg</urlFoto>
+    <lugarFoto rdf:resource="#Otros"/>
+  </Foto>
+  <Foto rdf:ID="Foto16">
+    <lugarFoto rdf:resource="#Acto_Oficial"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto16.jpg</urlFoto>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+  </Foto>
+  <Foto rdf:ID="Foto5">
+    <lugarFoto rdf:resource="#Palacio"/>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto5.jpg</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto22">
+    <lugarFoto rdf:resource="#Otros"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto22.jpg</urlFoto>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+  </Foto>
+  <Foto rdf:ID="Foto13">
+    <lugarFoto rdf:resource="#Otros"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/fotos13.png</urlFoto>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+  </Foto>
+  <tituloNobiliario rdf:ID="Infanta"/>
+  <Foto rdf:ID="Foto23">
+    <lugarFoto>
+      <Ubicacion rdf:ID="Boda"/>
+    </lugarFoto>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto23.jpg</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto1">
+    <lugarFoto rdf:resource="#Palacio"/>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Pablo_Urdangarin"/>
+    <aparece rdf:resource="#Victoria_Marichalar"/>
+    <aparece rdf:resource="#Miguel_Urdangarin"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto1.png</urlFoto>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Felipe_Marichalar"/>
+    <aparece rdf:resource="#Iñaki_Urdangarin"/>
+    <aparece>
+      <Familia rdf:ID="Jaime_Marichalar"/>
+    </aparece>
+    <aparece rdf:resource="#Irene_Urdangarin"/>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Cristina_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Juan_Urdangarin"/>
+  </Foto>
+  <Foto rdf:ID="Foto14">
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto14.jpg</urlFoto>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <lugarFoto rdf:resource="#Boda"/>
+  </Foto>
   <tituloNobiliario rdf:ID="Reina"/>
-  <Ubicacion rdf:ID="Boda"/>
+  <Foto rdf:ID="Foto11">
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto11.png</urlFoto>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <lugarFoto rdf:resource="#Despacho"/>
+  </Foto>
+  <Foto rdf:ID="Foto3">
+    <lugarFoto rdf:resource="#Palacio"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto3.jpg</urlFoto>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Iñaki_Urdangarin"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Cristina_Borbon"/>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+  </Foto>
+  <Foto rdf:ID="Foto12">
+    <lugarFoto rdf:resource="#Despacho"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto12.ong</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto19">
+    <aparece rdf:resource="#Cristina_Borbon"/>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <lugarFoto rdf:resource="#Palacio"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Victoria_Marichalar"/>
+    <aparece rdf:resource="#Miguel_Urdangarin"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto19.jpg</urlFoto>
+    <aparece rdf:resource="#Pablo_Urdangarin"/>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Juan_Urdangarin"/>
+    <aparece rdf:resource="#Felipe_Marichalar"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Irene_Urdangarin"/>
+    <aparece rdf:resource="#Iñaki_Urdangarin"/>
+  </Foto>
+  <Foto rdf:ID="Foto9">
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <lugarFoto rdf:resource="#Acto_Oficial"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto9.png</urlFoto>
+  </Foto>
+  <Foto rdf:ID="Foto2">
+    <aparece rdf:resource="#Miguel_Urdangarin"/>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Victoria_Marichalar"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto2.png</urlFoto>
+    <aparece rdf:resource="#Sofia_Grecia"/>
+    <aparece rdf:resource="#Juan_Urdangarin"/>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Felipe_Marichalar"/>
+    <lugarFoto rdf:resource="#Palacio"/>
+    <aparece rdf:resource="#Iñaki_Urdangarin"/>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <aparece rdf:resource="#Jaime_Marichalar"/>
+    <aparece rdf:resource="#Cristina_Borbon"/>
+    <aparece rdf:resource="#Irene_Urdangarin"/>
+    <aparece rdf:resource="#Pablo_Urdangarin"/>
+  </Foto>
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->
