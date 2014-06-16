@@ -128,7 +128,7 @@ public class Ventana1 extends JFrame {
 		JLabel lblAparece = new JLabel("Aparece:");
 		panel_3.add(lblAparece, "cell 0 2");
 		
-		comboBoxProp = new JComboBox(new String[]{"aparece_en","esta_en"});
+		comboBoxProp = new JComboBox(new String[]{"aparece","lugarFoto"});
 		comboBoxProp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				mostrarFoto((String)comboBoxFoto.getSelectedItem());
@@ -278,9 +278,9 @@ public class Ventana1 extends JFrame {
 	
 	public void loadCBItems(){
 		List<String> items = conector.getInstanciasClase("Lugar");
-		if (comboBoxProp.equals("aparece_en")){
+		if (comboBoxProp.equals("aparece")){
 			;
-		} else if (comboBoxProp.equals("esta_en")) {
+		} else if (comboBoxProp.equals("lugarFoto")) {
 			items = conector.getInstanciasClase("Familia");
 		}		
 		comboBoxAparece.removeAllItems();
@@ -317,7 +317,7 @@ public class Ventana1 extends JFrame {
 	public void cargarListasMarcas() {
 		//Marcas 1
 		((DefaultListModel<String>)listR1.getModel()).removeAllElements();
-		List<String> items = conector.getDatosImagen((String)comboBoxFoto.getSelectedItem(), (String)"aparece_en");
+		List<String> items = conector.getDatosImagen((String)comboBoxFoto.getSelectedItem(), (String)"aparece");
 		int i = 0;
 		for (i=0;i<items.size();i++){	
 			String nombre = items.get(i);
@@ -325,7 +325,7 @@ public class Ventana1 extends JFrame {
 		}
 		//Marcas 2
 		((DefaultListModel<String>)listR2.getModel()).removeAllElements();
-		List<String> items2 = conector.getDatosImagen((String)comboBoxFoto.getSelectedItem(), (String)"esta_en");
+		List<String> items2 = conector.getDatosImagen((String)comboBoxFoto.getSelectedItem(), (String)"lugarFoto");
 		for (i=0;i<items2.size();i++){	
 			String nombre2 = items2.get(i);
 			((DefaultListModel<String>)listR2.getModel()).addElement(nombre2);

@@ -31,19 +31,7 @@ public class Conector {
 	public JPanel getPanelOntologia() {
 		return new PnlSelectInstance(ontologia);
 	}
-	
-	
-	
-	//devuelve las instancias de la clase Persona
-	public List<String> getPersonas() {
-		List<String> personas = new ArrayList<String>();
-		Iterator<String> it= ontologia.listInstances("Persona");
-		while (it.hasNext()){
-			String nombre = it.next();
-			personas.add(nombre);	
-		}
-		return personas;
-	}
+
 	
 	public List<String> getInstanciasClase(String clase){
 		List<String> lista = new ArrayList<String>();
