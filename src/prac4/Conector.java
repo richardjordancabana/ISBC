@@ -2,6 +2,7 @@ package prac4;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import javax.swing.JPanel;
 
 import es.ucm.fdi.gaia.ontobridge.OntoBridge;
@@ -156,10 +157,6 @@ public class Conector {
 			ontologia.deleteOntProperty(origen,prop,destino);
 			ontologia.save("Ejercicio2.owl");
 		}
-	
-		
-		
-
 
 		public List<String> getDatosImagen( String imagen,String propiedad){
 			List<String> datos = new ArrayList<String>();

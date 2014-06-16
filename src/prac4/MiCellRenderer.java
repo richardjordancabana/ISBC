@@ -28,7 +28,7 @@ public class MiCellRenderer extends DefaultListCellRenderer {
 		panel.setPreferredSize(new Dimension(300,210));
 		panel.setBorder(BorderFactory.createLineBorder(Color.black));
 		
-		icono = new ImageIcon(icono.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT));
+		icono = new ImageIcon(icono.getImage().getScaledInstance(400, 280, Image.SCALE_DEFAULT));
 		
 		JLabel JLabel_foto = new JLabel ();
 		JLabel_foto.setIcon(icono);
