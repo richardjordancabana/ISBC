@@ -1,4 +1,4 @@
-; Mon Jun 16 03:10:58 CEST 2014
+; Mon Jun 16 04:27:56 CEST 2014
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 533")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontologiaMonarquia_ProjectKB_Class288]
-		[ontologiaMonarquia_ProjectKB_Class289]
-		[ontologiaMonarquia_ProjectKB_Class290]
-		[ontologiaMonarquia_ProjectKB_Class291]
-		[ontologiaMonarquia_ProjectKB_Class292]))
+		[ontologiaMonarquia_ProjectKB_Class313]
+		[ontologiaMonarquia_ProjectKB_Class314]
+		[ontologiaMonarquia_ProjectKB_Class315]
+		[ontologiaMonarquia_ProjectKB_Class316]
+		[ontologiaMonarquia_ProjectKB_Class317]))
 
 ([CLSES_TAB] of  Widget
 
@@ -5560,27 +5560,27 @@
 ([KB_941921_Instance_7] of  Property_List
 )
 
-([ontologiaMonarquia_ProjectKB_Class288] of  String
+([ontologiaMonarquia_ProjectKB_Class313] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([ontologiaMonarquia_ProjectKB_Class289] of  String
+([ontologiaMonarquia_ProjectKB_Class314] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "%3ANAME"))
 
-([ontologiaMonarquia_ProjectKB_Class290] of  String
+([ontologiaMonarquia_ProjectKB_Class315] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([ontologiaMonarquia_ProjectKB_Class291] of  String
+([ontologiaMonarquia_ProjectKB_Class316] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([ontologiaMonarquia_ProjectKB_Class292] of  String
+([ontologiaMonarquia_ProjectKB_Class317] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Thing")
 	(string_value "%3ANAME"))
