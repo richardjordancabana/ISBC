@@ -57,6 +57,7 @@ public class Ventana1 extends JFrame {
 	JComboBox<String> comboBoxFoto;
 	JComboBox<String> comboBoxAparece;
 	JComboBox<String> comboBoxProp;
+	JComboBox<String> comboBoxPersona;
 	
 	JLabel labelFoto;
 	/**
@@ -120,7 +121,7 @@ public class Ventana1 extends JFrame {
 		comboBoxFoto = new JComboBox<String>();
 		comboBoxFoto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				mostrarFoto((String)comboBoxFoto.getSelectedItem());
+				verImagen((String)comboBoxFoto.getSelectedItem());
 			}
 		});
 		panel_3.add(comboBoxFoto, "cell 0 1,growx");
@@ -132,7 +133,7 @@ public class Ventana1 extends JFrame {
 		comboBoxProp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				loadCBItems();
-				mostrarFoto((String)comboBoxFoto.getSelectedItem());
+				verImagen((String)comboBoxFoto.getSelectedItem());
 			}
 		});
 		panel_3.add(comboBoxProp, "cell 0 3,growx");
@@ -140,7 +141,7 @@ public class Ventana1 extends JFrame {
 		comboBoxAparece = new JComboBox<String>();
 		comboBoxAparece.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				mostrarFoto((String)comboBoxFoto.getSelectedItem());
+				verImagen((String)comboBoxFoto.getSelectedItem());
 			}
 		});
 		panel_3.add(comboBoxAparece, "cell 0 4,growx");
@@ -152,8 +153,8 @@ public class Ventana1 extends JFrame {
 		JButton btnMarca = new JButton("Marca");
 		btnMarca.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				marcarFoto();
-				mostrarFoto((String)comboBoxFoto.getSelectedItem());
+				marcar();
+				verImagen((String)comboBoxFoto.getSelectedItem());
 			}
 		});
 		panel_2.add(btnMarca, "flowx,cell 0 0");
@@ -190,8 +191,8 @@ public class Ventana1 extends JFrame {
 		JButton btnElimina = new JButton("Elimina");
 		btnElimina.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				eliminarMarca();
-				mostrarFoto((String)comboBoxFoto.getSelectedItem());
+				desmarcar();
+				verImagen((String)comboBoxFoto.getSelectedItem());
 			}
 		});
 		panel_2.add(btnElimina, "cell 0 0");
@@ -205,29 +206,7 @@ public class Ventana1 extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panelBusqueda.add(panel_1, "cell 0 0,grow");
-		panel_1.setLayout(new MigLayout("", "[]", "[][][][][]"));
-		
-		JButton btnFotosDelRey = new JButton("Fotos del Rey");
-		btnFotosDelRey.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				cargarListaFotos(tiposBusqueda.rey);
-			}
-		});
-		panel_1.add(btnFotosDelRey, "cell 0 0,growx");
-		
-		JButton btnFotosFamiliares = new JButton("Fotos familiares");
-		panel_1.add(btnFotosFamiliares, "cell 0 1,growx");
-		
-		JButton btnFotosDeTrabajo = new JButton("Fotos de trabajo");
-		btnFotosDeTrabajo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				cargarListaFotos(tiposBusqueda.trabajo);
-			}
-		});
-		panel_1.add(btnFotosDeTrabajo, "cell 0 2,growx");
-		
-		JButton btnFotosRomnticas = new JButton("Fotos romanticas");
-		panel_1.add(btnFotosRomnticas, "cell 0 3,growx");
+		panel_1.setLayout(new MigLayout("", "[grow]", "[][][][][][][][][]"));
 		
 		JButton btnFotosDeHermanos = new JButton("Fotos de hermanos");
 		btnFotosDeHermanos.addActionListener(new ActionListener() {
@@ -235,17 +214,53 @@ public class Ventana1 extends JFrame {
 				cargarListaFotos(tiposBusqueda.hermanos);
 			}
 		});
-		panel_1.add(btnFotosDeHermanos, "cell 0 4,growx");
-		btnFotosRomnticas.addActionListener(new ActionListener() {
+		
+		JButton btnFotosDeTrabajo = new JButton("Fotos de trabajo");
+		btnFotosDeTrabajo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				cargarListaFotos(tiposBusqueda.romantica);
+				cargarListaFotos(tiposBusqueda.trabajo);
 			}
 		});
+		
+		JButton btnFotosDelRey = new JButton("Fotos del Rey");
+		btnFotosDelRey.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cargarListaFotos(tiposBusqueda.rey);
+			}
+		});
+		
+		JLabel lblBsquedasRpidas = new JLabel("B\u00FAsquedas r\u00E1pidas:");
+		panel_1.add(lblBsquedasRpidas, "cell 0 0");
+		panel_1.add(btnFotosDelRey, "cell 0 1,growx");
+		
+		JButton btnFotosFamiliares = new JButton("Fotos familiares");
+		panel_1.add(btnFotosFamiliares, "cell 0 2,growx");
 		btnFotosFamiliares.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cargarListaFotos(tiposBusqueda.familia);
 			}
 		});
+		panel_1.add(btnFotosDeTrabajo, "cell 0 3,growx");
+		
+		JButton btnFotosRomnticas = new JButton("Fotos romanticas");
+		panel_1.add(btnFotosRomnticas, "cell 0 4,growx");
+		btnFotosRomnticas.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cargarListaFotos(tiposBusqueda.romantica);
+			}
+		});
+		panel_1.add(btnFotosDeHermanos, "cell 0 5,growx");
+		
+		JLabel lblBsquedaPorPersona = new JLabel("B\u00FAsqueda por persona:");
+		panel_1.add(lblBsquedaPorPersona, "cell 0 7");
+		
+		comboBoxPersona = new JComboBox<String>();
+		comboBoxPersona.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				buscarPersona();
+			}
+		});
+		panel_1.add(comboBoxPersona, "cell 0 8,growx");
 		
 		JPanel panel = new JPanel();
 		panelBusqueda.add(panel, "cell 1 0 9 1,grow");
@@ -266,6 +281,7 @@ public class Ventana1 extends JFrame {
 		//Inicializacion boxes
 		loadCBFotos();
 		loadCBItems();
+		loadCBPersona();
 	}
 	
 	
@@ -275,6 +291,14 @@ public class Ventana1 extends JFrame {
 		items = conector.getInstanciasClase("Foto");
 		for (int i=0;i<items.size();i++)
 			comboBoxFoto.addItem(items.get(i));
+	}
+	
+	public void loadCBPersona(){
+		List<String> items_personas = conector.getInstanciasClase("Familia");
+		comboBoxPersona.addItem(" - ");
+		for (int i=0;i<items_personas.size();i++)
+			comboBoxPersona.addItem(items_personas.get(i));
+		
 	}
 	
 	public void loadCBItems(){
@@ -303,6 +327,8 @@ public class Ventana1 extends JFrame {
 		}
 	}
 	
+
+	
 	public void cargarListaFotos(tiposBusqueda tB){
 		((DefaultListModel<ImageIcon>)listFotos.getModel()).removeAllElements();
 		List<String> items = imagenesDe(tB);
@@ -313,6 +339,20 @@ public class Ventana1 extends JFrame {
 			((DefaultListModel<ImageIcon>)listFotos.getModel()).addElement(icono);
 		}
 		SwingUtilities.updateComponentTreeUI(this);
+	}
+	
+	public void buscarPersona(){
+		String persona = "";
+		if (comboBoxPersona.getSelectedIndex() != 0)
+			persona = (String)comboBoxPersona.getSelectedItem();
+		
+		((DefaultListModel<ImageIcon>)listFotos.getModel()).removeAllElements();
+		List<String> items = conector.getPersona(persona);
+		for (int i=0;i<items.size();i++){	
+			String nombre = items.get(i);
+			ImageIcon icono = new ImageIcon(conector.getUrl(nombre));
+			((DefaultListModel<ImageIcon>)listFotos.getModel()).addElement(icono);
+		}
 	}
 	
 	public void cargarListasMarcas() {
@@ -333,19 +373,19 @@ public class Ventana1 extends JFrame {
 		}
 	}
 	
-	public void marcarFoto(){
+	public void marcar(){
 		conector.marcar((String)comboBoxFoto.getSelectedItem(),(String)comboBoxProp.getSelectedItem(),(String)comboBoxAparece.getSelectedItem());
 		cargarListasMarcas();
 	}
 	
-	public void eliminarMarca(){
+	public void desmarcar(){
 		int index = listR1.getSelectedIndex();
 		if (index > -1)
 			conector.desmarcar((String)comboBoxFoto.getSelectedItem(),(String)comboBoxProp.getSelectedItem(),(String)comboBoxAparece.getSelectedItem());
 		cargarListasMarcas();
 	}
 	
-	public void mostrarFoto(String url){
+	public void verImagen(String url){
 		ImageIcon icono = new ImageIcon(conector.getUrl(url));
 		icono = new ImageIcon(icono.getImage().getScaledInstance(600, 420, Image.SCALE_DEFAULT));
 		labelFoto.setIcon(icono);

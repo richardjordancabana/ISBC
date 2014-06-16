@@ -54,30 +54,8 @@ public class Conector {
 			String url=string.substring(0,string.indexOf("^^"));
 			return url ;
 		}
-		
-		public List<String> getPropiedadImagen(String valor, String propiedad){
-			List<String> img = new ArrayList<String>();
-		    Iterator<String> iteradorFotos = ontologia.listInstances("Foto");
-		    while (iteradorFotos.hasNext()){
-		    	String imagen = iteradorFotos.next();
-		    	Iterator<String> propiedades =  ontologia.listPropertyValue(imagen,propiedad);
-		    	boolean coincide = false;
-		    	while (propiedades.hasNext() && !coincide){
-		    		String prop = recortarNombre(propiedades.next());
-		    	
-		    		if(prop.equals(valor))
-		    		coincide = true;
-		    		else coincide =false;
-		    		
-		    	}
-		    	if (coincide )
-		    		img.add(recortarNombre(imagen));
-		    /*	if(valor.equals(""))
-		    		img.add(recortarNombre(imagen)); */
-		    }
-		    return img;
-		}		
-		
+			
+		/*
 		public List<String> getImagenesConsulta(String valor, String propiedad){
 			List<String> img = new ArrayList<String>();
 		    Iterator<String> it = ontologia.listInstances("Foto");
@@ -97,11 +75,12 @@ public class Conector {
 		    	}
 		    	if (coincide )
 		    		img.add(recortarNombre(imagen));
-		    	/*	if(valor.equals(""))
-	    		img.add(recortarNombre(imagen)); */
+		    	//	if(valor.equals(""))
+	    		//img.add(recortarNombre(imagen));
 		    }
 		    return img;
 		}
+		*/
 
 		
 /*	
@@ -248,7 +227,25 @@ public class Conector {
 		    }
 		   return img	;	
 		}	
-	
 		
-		
+		public List<String> getPersona(String persona){
+			List<String> img = new ArrayList<String>();
+		    Iterator<String> iteradorFotos = ontologia.listInstances("Foto");
+		    while (iteradorFotos.hasNext()){
+		    	String imagen = iteradorFotos.next();
+		    	Iterator<String> propiedades =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	boolean coincide = false;
+		    	while (propiedades.hasNext() && !coincide){
+		    		String prop = recortarNombre(propiedades.next());
+		    	
+		    		if(prop.equals(persona))
+		    		coincide = true;
+		    		else coincide =false;
+		    		
+		    	}
+		    	if (coincide )
+		    		img.add(recortarNombre(imagen));
+		    }
+		    return img;
+		}
 }
