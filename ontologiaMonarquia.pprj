@@ -1,16 +1,16 @@
-; Sun Jun 15 14:11:36 CEST 2014
+; Mon Jun 16 03:10:58 CEST 2014
 ; 
-;+ (version "3.3.1")
-;+ (build "Build 430")
+;+ (version "3.4")
+;+ (build "Build 533")
 
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Ejercicio2_ProjectKB_Instance_191]
-		[Ejercicio2_ProjectKB_Instance_192]
-		[Ejercicio2_ProjectKB_Instance_193]
-		[Ejercicio2_ProjectKB_Instance_194]
-		[Ejercicio2_ProjectKB_Instance_195]))
+		[ontologiaMonarquia_ProjectKB_Class288]
+		[ontologiaMonarquia_ProjectKB_Class289]
+		[ontologiaMonarquia_ProjectKB_Class290]
+		[ontologiaMonarquia_ProjectKB_Class291]
+		[ontologiaMonarquia_ProjectKB_Class292]))
 
 ([CLSES_TAB] of  Widget
 
@@ -19,120 +19,15 @@
 	(property_list [Instance_47])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
-([Ejercicio2_ProjectKB_Instance_0] of  Widget
+([empty.owl_ProjectKB_Class5] of  String
 
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_1])
-	(widget_class_name "TGViztab.TGVizTab"))
+	(name "owl_major_build")
+	(string_value "3.4"))
 
-([Ejercicio2_ProjectKB_Instance_1] of  Property_List
-)
+([empty.owl_ProjectKB_Class6] of  Boolean
 
-([Ejercicio2_ProjectKB_Instance_10] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_11])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([Ejercicio2_ProjectKB_Instance_11] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_12] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_13])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([Ejercicio2_ProjectKB_Instance_13] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_14] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_15])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
-
-([Ejercicio2_ProjectKB_Instance_15] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_16] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_17])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
-
-([Ejercicio2_ProjectKB_Instance_17] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_18] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_19])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([Ejercicio2_ProjectKB_Instance_19] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_191] of  String
-
-	(name "owl:Class")
-	(string_value "%3ANAME"))
-
-([Ejercicio2_ProjectKB_Instance_192] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([Ejercicio2_ProjectKB_Instance_193] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([Ejercicio2_ProjectKB_Instance_194] of  String
-
-	(name "owl:Thing")
-	(string_value "%3ANAME"))
-
-([Ejercicio2_ProjectKB_Instance_195] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([Ejercicio2_ProjectKB_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
-
-([Ejercicio2_ProjectKB_Instance_3] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_4] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_5])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
-
-([Ejercicio2_ProjectKB_Instance_5] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_6] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_7])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([Ejercicio2_ProjectKB_Instance_7] of  Property_List
-)
-
-([Ejercicio2_ProjectKB_Instance_8] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Ejercicio2_ProjectKB_Instance_9])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
-
-([Ejercicio2_ProjectKB_Instance_9] of  Property_List
-)
+	(boolean_value TRUE)
+	(name "parser_namespace_database_inclusion_version"))
 
 ([FORMS_TAB] of  Widget
 
@@ -144,7 +39,7 @@
 ([Instance_1005] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:Class")
+	(name "http://www.w3.org/2002/07/owl#Class")
 	(property_list [XY_Instance_540])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -241,7 +136,7 @@
 ([Instance_443] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:AnonymousClass")
+	(name "http://www.w3.org/2002/07/owl#AnonymousClass")
 	(property_list [KB_713803_Instance_7])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -273,7 +168,7 @@
 ([Instance_581] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdf:Property")
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property")
 	(property_list [KB_886778_Instance_144])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -377,7 +272,7 @@
 	(height 360)
 	(is_hidden FALSE)
 	(label "Class Annotations")
-	(name "owl:equivalentClass")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
 	(property_list [KB_100699_Instance_1])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 650)
@@ -394,7 +289,7 @@
 
 	(is_hidden FALSE)
 	(label "Disjoints")
-	(name "owl:disjointWith")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget"))
 
 ([KB_100699_Instance_11] of  Property_List
@@ -440,7 +335,7 @@
 	(height 137)
 	(is_hidden FALSE)
 	(label "Disjoints")
-	(name "owl:disjointWith")
+	(name "http://www.w3.org/2002/07/owl#disjointWith")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 650)
 	(x 0)
@@ -483,7 +378,7 @@
 ([KB_140180_Instance_0] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_140180_Instance_1]))
 
 ([KB_140180_Instance_1] of  Property_List
@@ -492,13 +387,13 @@
 ([KB_140180_Instance_2] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_140180_Instance_3]))
 
 ([KB_140180_Instance_279] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_140180_Instance_280]))
 
 ([KB_140180_Instance_280] of  Property_List
@@ -507,7 +402,7 @@
 ([KB_140180_Instance_281] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_140180_Instance_282]))
 
 ([KB_140180_Instance_282] of  Property_List
@@ -516,7 +411,7 @@
 ([KB_140180_Instance_283] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_140180_Instance_284]))
 
 ([KB_140180_Instance_284] of  Property_List
@@ -525,7 +420,7 @@
 ([KB_140180_Instance_285] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_140180_Instance_286]))
 
 ([KB_140180_Instance_286] of  Property_List
@@ -534,7 +429,7 @@
 ([KB_140180_Instance_287] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_140180_Instance_288]))
 
 ([KB_140180_Instance_288] of  Property_List
@@ -543,7 +438,7 @@
 ([KB_140180_Instance_289] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_140180_Instance_290]))
 
 ([KB_140180_Instance_290] of  Property_List
@@ -552,7 +447,7 @@
 ([KB_140180_Instance_291] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_140180_Instance_292]))
 
 ([KB_140180_Instance_292] of  Property_List
@@ -564,7 +459,7 @@
 ([KB_140180_Instance_4] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_140180_Instance_5]))
 
 ([KB_140180_Instance_5] of  Property_List
@@ -573,7 +468,7 @@
 ([KB_140180_Instance_6] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_140180_Instance_7]))
 
 ([KB_140180_Instance_7] of  Property_List
@@ -582,22 +477,17 @@
 ([KB_140180_Instance_8] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_140180_Instance_9]))
 
 ([KB_140180_Instance_9] of  Property_List
 )
 
-([KB_200919_Instance_0] of  String
-
-	(name "owl_file_name")
-	(string_value "Ejercicio2.owl"))
-
 ([KB_221055_Instance_10] of  Widget
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_11])
 	(width 0)
 	(x 0)
@@ -610,7 +500,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_15])
 	(width 0)
 	(x 0)
@@ -623,7 +513,7 @@
 
 	(height 60)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_19])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.OWLInversePropertyWidget")
 	(width 200)
@@ -637,7 +527,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_3])
 	(width 0)
 	(x 0)
@@ -647,7 +537,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_23])
 	(width 0)
 	(x 0)
@@ -660,7 +550,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_27])
 	(width 0)
 	(x 0)
@@ -676,7 +566,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_31])
 	(width 0)
 	(x 0)
@@ -689,7 +579,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_35])
 	(width 0)
 	(x 0)
@@ -702,7 +592,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_39])
 	(width 0)
 	(x 0)
@@ -711,99 +601,21 @@
 ([KB_221055_Instance_39] of  Property_List
 )
 
-([KB_221055_Instance_42] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_43])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_43] of  Property_List
-)
-
-([KB_221055_Instance_46] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_47])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_47] of  Property_List
-)
-
-([KB_221055_Instance_50] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_51])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_51] of  Property_List
-)
-
-([KB_221055_Instance_54] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_55])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_55] of  Property_List
-)
-
-([KB_221055_Instance_58] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_59])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_59] of  Property_List
-)
-
 ([KB_221055_Instance_6] of  Widget
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_7])
 	(width 0)
 	(x 0)
 	(y 0))
 
-([KB_221055_Instance_62] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_63])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_63] of  Property_List
-)
-
 ([KB_221055_Instance_66] of  Widget
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:inverseOf")
+	(name "http://www.w3.org/2002/07/owl#inverseOf")
 	(property_list [KB_221055_Instance_67])
 	(width 0)
 	(x 0)
@@ -819,7 +631,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subPropertyOf")
 	(property_list [KB_221055_Instance_71])
 	(width 0)
 	(x 0)
@@ -831,7 +643,7 @@
 ([KB_301165_Instance_1013] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:Nothing")
+	(name "http://www.w3.org/2002/07/owl#Nothing")
 	(property_list [XY_Instance_975])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -845,7 +657,7 @@
 ([KB_303942_Instance_68] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:Thing")
+	(name "http://www.w3.org/2002/07/owl#Thing")
 	(property_list [XY_Instance_784])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -921,7 +733,7 @@
 ([KB_313796_Instance_852] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:AllDifferent")
+	(name "http://www.w3.org/2002/07/owl#AllDifferent")
 	(property_list [XY_Instance_89])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -932,6 +744,14 @@
 	(property_list [XY_Instance_665])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
+([KB_325529_Class0] of  Map
+)
+
+([KB_325529_Class4] of  String
+
+	(name "owl_file_name")
+	(string_value "ontologiaMonarquia.owl"))
+
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
@@ -940,7 +760,7 @@
 ([KB_465546_Instance_567] of  Widget
 
 	(is_hidden FALSE)
-	(name "protege:ExternalResource")
+	(name "http://protege.stanford.edu/plugins/owl/protege#ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -962,7 +782,7 @@
 ([KB_635552_Instance_0] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_635552_Instance_1]))
 
 ([KB_635552_Instance_1] of  Property_List
@@ -971,7 +791,7 @@
 ([KB_635552_Instance_10] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_635552_Instance_11]))
 
 ([KB_635552_Instance_11] of  Property_List
@@ -980,7 +800,7 @@
 ([KB_635552_Instance_12] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:priorVersion")
+	(name "http://www.w3.org/2002/07/owl#priorVersion")
 	(property_list [KB_635552_Instance_13]))
 
 ([KB_635552_Instance_13] of  Property_List
@@ -989,7 +809,7 @@
 ([KB_635552_Instance_14] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_635552_Instance_15]))
 
 ([KB_635552_Instance_15] of  Property_List
@@ -998,7 +818,7 @@
 ([KB_635552_Instance_16] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_635552_Instance_17]))
 
 ([KB_635552_Instance_17] of  Property_List
@@ -1007,7 +827,7 @@
 ([KB_635552_Instance_18] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_635552_Instance_19]))
 
 ([KB_635552_Instance_19] of  Property_List
@@ -1016,13 +836,13 @@
 ([KB_635552_Instance_2] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_635552_Instance_3]))
 
 ([KB_635552_Instance_20] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:incompatibleWith")
+	(name "http://www.w3.org/2002/07/owl#incompatibleWith")
 	(property_list [KB_635552_Instance_21]))
 
 ([KB_635552_Instance_21] of  Property_List
@@ -1032,7 +852,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:backwardCompatibleWith")
+	(name "http://www.w3.org/2002/07/owl#backwardCompatibleWith")
 	(property_list [KB_635552_Instance_23])
 	(width 0)
 	(x 0)
@@ -1045,7 +865,7 @@
 ([KB_635552_Instance_24] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_635552_Instance_25]))
 
 ([KB_635552_Instance_25] of  Property_List
@@ -1054,7 +874,7 @@
 ([KB_635552_Instance_26] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_635552_Instance_27]))
 
 ([KB_635552_Instance_27] of  Property_List
@@ -1063,7 +883,7 @@
 ([KB_635552_Instance_28] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_635552_Instance_29]))
 
 ([KB_635552_Instance_29] of  Property_List
@@ -1075,7 +895,7 @@
 ([KB_635552_Instance_30] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_635552_Instance_31]))
 
 ([KB_635552_Instance_31] of  Property_List
@@ -1084,7 +904,7 @@
 ([KB_635552_Instance_32] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_635552_Instance_33]))
 
 ([KB_635552_Instance_33] of  Property_List
@@ -1093,7 +913,7 @@
 ([KB_635552_Instance_34] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_635552_Instance_35]))
 
 ([KB_635552_Instance_35] of  Property_List
@@ -1102,7 +922,7 @@
 ([KB_635552_Instance_4] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_635552_Instance_5]))
 
 ([KB_635552_Instance_5] of  Property_List
@@ -1111,7 +931,7 @@
 ([KB_635552_Instance_6] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_635552_Instance_7]))
 
 ([KB_635552_Instance_7] of  Property_List
@@ -1120,7 +940,7 @@
 ([KB_635552_Instance_8] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_635552_Instance_9]))
 
 ([KB_635552_Instance_9] of  Property_List
@@ -1129,16 +949,253 @@
 ([KB_691299_Instance_398] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:DatatypeProperty")
+	(name "http://www.w3.org/2002/07/owl#DatatypeProperty")
 	(property_list [KB_938545_Instance_56])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
 ([KB_691299_Instance_537] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:ObjectProperty")
+	(name "http://www.w3.org/2002/07/owl#ObjectProperty")
 	(property_list [XY_Instance_462])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_700940_Class0] of  Map
+)
+
+([KB_700940_Class1] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class2])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([KB_700940_Class10] of  Property_List
+)
+
+([KB_700940_Class11] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class12])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([KB_700940_Class12] of  Property_List
+)
+
+([KB_700940_Class13] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class14])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([KB_700940_Class14] of  Property_List
+)
+
+([KB_700940_Class15] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class16])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([KB_700940_Class16] of  Property_List
+)
+
+([KB_700940_Class17] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class18])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
+
+([KB_700940_Class18] of  Property_List
+)
+
+([KB_700940_Class19] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class20])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([KB_700940_Class2] of  Property_List
+)
+
+([KB_700940_Class20] of  Property_List
+)
+
+([KB_700940_Class21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class22])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([KB_700940_Class22] of  Property_List
+)
+
+([KB_700940_Class23] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class24])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([KB_700940_Class24] of  Property_List
+)
+
+([KB_700940_Class25] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class26])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([KB_700940_Class26] of  Property_List
+)
+
+([KB_700940_Class27] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class28])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([KB_700940_Class28] of  Property_List
+)
+
+([KB_700940_Class29] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class30])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([KB_700940_Class3] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class4])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([KB_700940_Class30] of  Property_List
+)
+
+([KB_700940_Class31] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class32])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([KB_700940_Class32] of  Property_List
+)
+
+([KB_700940_Class33] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class34])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([KB_700940_Class34] of  Property_List
+)
+
+([KB_700940_Class35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class36])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([KB_700940_Class36] of  Property_List
+)
+
+([KB_700940_Class37] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class38])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([KB_700940_Class38] of  Property_List
+)
+
+([KB_700940_Class39] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class40])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([KB_700940_Class4] of  Property_List
+)
+
+([KB_700940_Class40] of  Property_List
+)
+
+([KB_700940_Class41] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class42])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([KB_700940_Class42] of  Property_List
+)
+
+([KB_700940_Class43] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class44])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([KB_700940_Class44] of  Property_List
+)
+
+([KB_700940_Class45] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class46])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([KB_700940_Class46] of  Property_List
+)
+
+([KB_700940_Class47] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class48])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([KB_700940_Class48] of  Property_List
+)
+
+([KB_700940_Class49] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class50])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([KB_700940_Class5] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class6])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([KB_700940_Class50] of  Property_List
+)
+
+([KB_700940_Class51] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class52])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([KB_700940_Class52] of  Property_List
+)
+
+([KB_700940_Class6] of  Property_List
+)
+
+([KB_700940_Class7] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class8])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
+
+([KB_700940_Class8] of  Property_List
+)
+
+([KB_700940_Class9] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [KB_700940_Class10])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
 ([KB_713803_Instance_10] of  Widget
 
@@ -1174,7 +1231,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -1184,8 +1241,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_15])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1212,8 +1269,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_19])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1257,7 +1314,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_26])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -1270,7 +1327,7 @@
 ([KB_713803_Instance_27] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_28]))
 
 ([KB_713803_Instance_28] of  Property_List
@@ -1279,7 +1336,7 @@
 ([KB_713803_Instance_29] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_30]))
 
 ([KB_713803_Instance_30] of  Property_List
@@ -1288,14 +1345,14 @@
 ([KB_713803_Instance_303] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:MaxCardinalityRestriction")
+	(name "http://www.w3.org/2002/07/owl#MaxCardinalityRestriction")
 	(property_list [KB_713803_Instance_348])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
 ([KB_713803_Instance_31] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_32]))
 
 ([KB_713803_Instance_32] of  Property_List
@@ -1304,7 +1361,7 @@
 ([KB_713803_Instance_33] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_34]))
 
 ([KB_713803_Instance_34] of  Property_List
@@ -1343,7 +1400,7 @@
 ([KB_713803_Instance_35] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_36]))
 
 ([KB_713803_Instance_350] of  Property_List
@@ -1387,7 +1444,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -1397,8 +1454,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_356])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1425,8 +1482,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_360])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1473,7 +1530,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_367])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -1486,7 +1543,7 @@
 ([KB_713803_Instance_368] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_369]))
 
 ([KB_713803_Instance_369] of  Property_List
@@ -1505,7 +1562,7 @@
 ([KB_713803_Instance_370] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_371]))
 
 ([KB_713803_Instance_371] of  Property_List
@@ -1514,7 +1571,7 @@
 ([KB_713803_Instance_372] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_373]))
 
 ([KB_713803_Instance_373] of  Property_List
@@ -1523,7 +1580,7 @@
 ([KB_713803_Instance_374] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_375]))
 
 ([KB_713803_Instance_375] of  Property_List
@@ -1532,7 +1589,7 @@
 ([KB_713803_Instance_376] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_377]))
 
 ([KB_713803_Instance_377] of  Property_List
@@ -1610,7 +1667,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:valuesFrom")
+	(name "http://www.w3.org/2002/07/owl#valuesFrom")
 	(property_list [KB_713803_Instance_389])
 	(width 0)
 	(x 0)
@@ -1622,7 +1679,7 @@
 ([KB_713803_Instance_390] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:MinCardinalityRestriction")
+	(name "http://www.w3.org/2002/07/owl#MinCardinalityRestriction")
 	(property_list [KB_713803_Instance_435])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -1710,7 +1767,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -1720,8 +1777,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_443])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1748,8 +1805,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_447])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -1803,7 +1860,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_454])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -1816,7 +1873,7 @@
 ([KB_713803_Instance_455] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_456]))
 
 ([KB_713803_Instance_456] of  Property_List
@@ -1825,7 +1882,7 @@
 ([KB_713803_Instance_457] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_458]))
 
 ([KB_713803_Instance_458] of  Property_List
@@ -1834,7 +1891,7 @@
 ([KB_713803_Instance_459] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_460]))
 
 ([KB_713803_Instance_46] of  Property_List
@@ -1846,7 +1903,7 @@
 ([KB_713803_Instance_461] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_462]))
 
 ([KB_713803_Instance_462] of  Property_List
@@ -1855,7 +1912,7 @@
 ([KB_713803_Instance_463] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_464]))
 
 ([KB_713803_Instance_464] of  Property_List
@@ -1940,7 +1997,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:valuesFrom")
+	(name "http://www.w3.org/2002/07/owl#valuesFrom")
 	(property_list [KB_713803_Instance_476])
 	(width 0)
 	(x 0)
@@ -1952,7 +2009,7 @@
 ([KB_713803_Instance_477] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:CardinalityRestriction")
+	(name "http://www.w3.org/2002/07/owl#CardinalityRestriction")
 	(property_list [KB_713803_Instance_522])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -2043,7 +2100,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -2053,8 +2110,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_530])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2081,8 +2138,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_534])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2126,7 +2183,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_541])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -2139,7 +2196,7 @@
 ([KB_713803_Instance_542] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_543]))
 
 ([KB_713803_Instance_543] of  Property_List
@@ -2148,7 +2205,7 @@
 ([KB_713803_Instance_544] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_545]))
 
 ([KB_713803_Instance_545] of  Property_List
@@ -2157,7 +2214,7 @@
 ([KB_713803_Instance_546] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_547]))
 
 ([KB_713803_Instance_547] of  Property_List
@@ -2166,7 +2223,7 @@
 ([KB_713803_Instance_548] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_549]))
 
 ([KB_713803_Instance_549] of  Property_List
@@ -2175,7 +2232,7 @@
 ([KB_713803_Instance_550] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_551]))
 
 ([KB_713803_Instance_551] of  Property_List
@@ -2250,7 +2307,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:valuesFrom")
+	(name "http://www.w3.org/2002/07/owl#valuesFrom")
 	(property_list [KB_713803_Instance_563])
 	(width 0)
 	(x 0)
@@ -2262,7 +2319,7 @@
 ([KB_713803_Instance_648] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:ComplementClass")
+	(name "http://www.w3.org/2002/07/owl#ComplementClass")
 	(property_list [KB_713803_Instance_651])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -2337,7 +2394,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -2347,8 +2404,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_659])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2375,8 +2432,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_663])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2420,7 +2477,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_670])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -2433,7 +2490,7 @@
 ([KB_713803_Instance_671] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_672]))
 
 ([KB_713803_Instance_672] of  Property_List
@@ -2442,7 +2499,7 @@
 ([KB_713803_Instance_673] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_674]))
 
 ([KB_713803_Instance_674] of  Property_List
@@ -2451,7 +2508,7 @@
 ([KB_713803_Instance_675] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_676]))
 
 ([KB_713803_Instance_676] of  Property_List
@@ -2460,7 +2517,7 @@
 ([KB_713803_Instance_677] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_678]))
 
 ([KB_713803_Instance_678] of  Property_List
@@ -2469,7 +2526,7 @@
 ([KB_713803_Instance_679] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_680]))
 
 ([KB_713803_Instance_680] of  Property_List
@@ -2544,7 +2601,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:complementOf")
+	(name "http://www.w3.org/2002/07/owl#complementOf")
 	(property_list [KB_713803_Instance_692])
 	(width 0)
 	(x 0)
@@ -2556,7 +2613,7 @@
 ([KB_713803_Instance_693] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:IntersectionClass")
+	(name "http://www.w3.org/2002/07/owl#IntersectionClass")
 	(property_list [KB_713803_Instance_738])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -2648,7 +2705,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -2658,8 +2715,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_746])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2686,8 +2743,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_750])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2731,7 +2788,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_757])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -2744,7 +2801,7 @@
 ([KB_713803_Instance_758] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_759]))
 
 ([KB_713803_Instance_759] of  Property_List
@@ -2753,7 +2810,7 @@
 ([KB_713803_Instance_760] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_761]))
 
 ([KB_713803_Instance_761] of  Property_List
@@ -2762,7 +2819,7 @@
 ([KB_713803_Instance_762] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_763]))
 
 ([KB_713803_Instance_763] of  Property_List
@@ -2771,7 +2828,7 @@
 ([KB_713803_Instance_764] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_765]))
 
 ([KB_713803_Instance_765] of  Property_List
@@ -2780,7 +2837,7 @@
 ([KB_713803_Instance_766] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_767]))
 
 ([KB_713803_Instance_767] of  Property_List
@@ -2855,7 +2912,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:intersectionOf")
+	(name "http://www.w3.org/2002/07/owl#intersectionOf")
 	(property_list [KB_713803_Instance_779])
 	(width 0)
 	(x 0)
@@ -2867,7 +2924,7 @@
 ([KB_713803_Instance_780] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:UnionClass")
+	(name "http://www.w3.org/2002/07/owl#UnionClass")
 	(property_list [KB_713803_Instance_825])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -2954,7 +3011,7 @@
 	(height 114)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
 	(x 0)
@@ -2964,8 +3021,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_713803_Instance_833])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -2992,8 +3049,8 @@
 
 	(height 144)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_713803_Instance_837])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 266)
@@ -3037,7 +3094,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_713803_Instance_844])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 280)
@@ -3050,7 +3107,7 @@
 ([KB_713803_Instance_845] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_713803_Instance_846]))
 
 ([KB_713803_Instance_846] of  Property_List
@@ -3059,7 +3116,7 @@
 ([KB_713803_Instance_847] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_713803_Instance_848]))
 
 ([KB_713803_Instance_848] of  Property_List
@@ -3068,7 +3125,7 @@
 ([KB_713803_Instance_849] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_713803_Instance_850]))
 
 ([KB_713803_Instance_850] of  Property_List
@@ -3077,7 +3134,7 @@
 ([KB_713803_Instance_851] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_852]))
 
 ([KB_713803_Instance_852] of  Property_List
@@ -3086,7 +3143,7 @@
 ([KB_713803_Instance_853] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_713803_Instance_854]))
 
 ([KB_713803_Instance_854] of  Property_List
@@ -3161,7 +3218,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:unionOf")
+	(name "http://www.w3.org/2002/07/owl#unionOf")
 	(property_list [KB_713803_Instance_866])
 	(width 0)
 	(x 0)
@@ -3180,7 +3237,7 @@
 ([KB_713803_Instance_980] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_713803_Instance_981]))
 
 ([KB_713803_Instance_981] of  Property_List
@@ -3189,7 +3246,7 @@
 ([KB_764103_Instance_545] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:Ontology")
+	(name "http://www.w3.org/2002/07/owl#Ontology")
 	(property_list [XY_Instance_195])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -3241,7 +3298,7 @@
 ([KB_868747_Instance_76] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:Class")
+	(name "http://www.w3.org/2000/01/rdf-schema#Class")
 	(property_list [XY_Instance_409])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -3477,7 +3534,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_886778_Instance_207])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 600)
@@ -3670,7 +3727,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_938545_Instance_115])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 600)
@@ -3697,7 +3754,7 @@
 ([KB_938545_Instance_118] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_938545_Instance_119]))
 
 ([KB_938545_Instance_119] of  Property_List
@@ -3706,13 +3763,13 @@
 ([KB_938545_Instance_120] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_938545_Instance_121]))
 
 ([KB_938545_Instance_1206] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_1207]))
 
 ([KB_938545_Instance_1207] of  Property_List
@@ -3721,7 +3778,7 @@
 ([KB_938545_Instance_1208] of  Widget
 
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_938545_Instance_1209]))
 
 ([KB_938545_Instance_1209] of  Property_List
@@ -3733,7 +3790,7 @@
 ([KB_938545_Instance_122] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_938545_Instance_123]))
 
 ([KB_938545_Instance_123] of  Property_List
@@ -3742,7 +3799,7 @@
 ([KB_938545_Instance_124] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_938545_Instance_125]))
 
 ([KB_938545_Instance_125] of  Property_List
@@ -3751,7 +3808,7 @@
 ([KB_938545_Instance_126] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_127]))
 
 ([KB_938545_Instance_127] of  Property_List
@@ -3761,7 +3818,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_129])
 	(width 0)
 	(x 0)
@@ -3774,7 +3831,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_131])
 	(width 0)
 	(x 0)
@@ -3787,7 +3844,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_133])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
 	(width 200)
@@ -3815,7 +3872,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_15])
 	(width 0)
 	(x 0)
@@ -3824,7 +3881,7 @@
 ([KB_938545_Instance_140] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_938545_Instance_141]))
 
 ([KB_938545_Instance_141] of  Property_List
@@ -3833,7 +3890,7 @@
 ([KB_938545_Instance_142] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_938545_Instance_143]))
 
 ([KB_938545_Instance_143] of  Property_List
@@ -3843,7 +3900,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_145])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
 	(width 200)
@@ -3857,7 +3914,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_149])
 	(width 0)
 	(x 0)
@@ -3873,7 +3930,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_153])
 	(width 0)
 	(x 0)
@@ -3898,7 +3955,7 @@
 ([KB_938545_Instance_158] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_938545_Instance_159]))
 
 ([KB_938545_Instance_159] of  Property_List
@@ -3907,7 +3964,7 @@
 ([KB_938545_Instance_160] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_161]))
 
 ([KB_938545_Instance_161] of  Property_List
@@ -3916,7 +3973,7 @@
 ([KB_938545_Instance_162] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_938545_Instance_163]))
 
 ([KB_938545_Instance_163] of  Property_List
@@ -3931,7 +3988,7 @@
 ([KB_938545_Instance_166] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:AnnotationProperty")
+	(name "http://www.w3.org/2002/07/owl#AnnotationProperty")
 	(property_list [KB_938545_Instance_249])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -3939,7 +3996,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_19])
 	(width 0)
 	(x 0)
@@ -3955,7 +4012,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_24])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
 	(width 200)
@@ -4152,7 +4209,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_938545_Instance_308])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 600)
@@ -4179,7 +4236,7 @@
 ([KB_938545_Instance_311] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_938545_Instance_312]))
 
 ([KB_938545_Instance_312] of  Property_List
@@ -4188,7 +4245,7 @@
 ([KB_938545_Instance_313] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_938545_Instance_314]))
 
 ([KB_938545_Instance_314] of  Property_List
@@ -4197,7 +4254,7 @@
 ([KB_938545_Instance_315] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_938545_Instance_316]))
 
 ([KB_938545_Instance_316] of  Property_List
@@ -4206,7 +4263,7 @@
 ([KB_938545_Instance_317] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_938545_Instance_318]))
 
 ([KB_938545_Instance_318] of  Property_List
@@ -4215,7 +4272,7 @@
 ([KB_938545_Instance_319] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_320]))
 
 ([KB_938545_Instance_320] of  Property_List
@@ -4225,7 +4282,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_322])
 	(width 0)
 	(x 0)
@@ -4238,7 +4295,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_324])
 	(width 0)
 	(x 0)
@@ -4251,7 +4308,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_326])
 	(width 0)
 	(x 0)
@@ -4276,7 +4333,7 @@
 ([KB_938545_Instance_329] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:FunctionalProperty")
+	(name "http://www.w3.org/2002/07/owl#FunctionalProperty")
 	(property_list [KB_938545_Instance_332])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -4429,7 +4486,7 @@
 	(height 107)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
 	(x 0)
@@ -4439,7 +4496,7 @@
 
 	(height 138)
 	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
+	(label "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(name ":OWL-EQUIVALENT-SLOTS")
 	(property_list [KB_938545_Instance_354])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -4467,8 +4524,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_938545_Instance_358])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -4495,8 +4552,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_938545_Instance_362])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -4523,8 +4580,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
+	(label "http://www.w3.org/2002/07/owl#equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_366])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -4659,7 +4716,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_938545_Instance_391])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 300)
@@ -4685,7 +4742,7 @@
 ([KB_938545_Instance_394] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_938545_Instance_395]))
 
 ([KB_938545_Instance_395] of  Property_List
@@ -4694,7 +4751,7 @@
 ([KB_938545_Instance_396] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_938545_Instance_397]))
 
 ([KB_938545_Instance_397] of  Property_List
@@ -4703,7 +4760,7 @@
 ([KB_938545_Instance_398] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_938545_Instance_399]))
 
 ([KB_938545_Instance_399] of  Property_List
@@ -4712,7 +4769,7 @@
 ([KB_938545_Instance_400] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_938545_Instance_401]))
 
 ([KB_938545_Instance_401] of  Property_List
@@ -4721,7 +4778,7 @@
 ([KB_938545_Instance_402] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_403]))
 
 ([KB_938545_Instance_403] of  Property_List
@@ -4731,7 +4788,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_405])
 	(width 0)
 	(x 0)
@@ -4744,7 +4801,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_407])
 	(width 0)
 	(x 0)
@@ -4757,7 +4814,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_409])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
 	(width 200)
@@ -4778,922 +4835,6 @@
 	(y 0))
 
 ([KB_938545_Instance_411] of  Property_List
-)
-
-([KB_938545_Instance_412] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:InverseFunctionalProperty")
-	(property_list [KB_938545_Instance_415])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_938545_Instance_415] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_416]
-		[KB_938545_Instance_418]
-		[KB_938545_Instance_422]
-		[KB_938545_Instance_423]
-		[KB_938545_Instance_425]
-		[KB_938545_Instance_427]
-		[KB_938545_Instance_429]
-		[KB_938545_Instance_430]
-		[KB_938545_Instance_454]
-		[KB_938545_Instance_456]
-		[KB_938545_Instance_459]
-		[KB_938545_Instance_467]
-		[KB_938545_Instance_471]
-		[KB_938545_Instance_473]
-		[KB_938545_Instance_475]
-		[KB_938545_Instance_477]
-		[KB_938545_Instance_479]
-		[KB_938545_Instance_481]
-		[KB_938545_Instance_483]
-		[KB_938545_Instance_485]
-		[KB_938545_Instance_487]
-		[KB_938545_Instance_489]
-		[KB_938545_Instance_491]
-		[KB_938545_Instance_493]
-		[KB_221055_Instance_42]
-		[KB_221055_Instance_46]))
-
-([KB_938545_Instance_416] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_417])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_417] of  Property_List
-)
-
-([KB_938545_Instance_418] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_422] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_423] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_424])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_424] of  Property_List
-)
-
-([KB_938545_Instance_425] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_426])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_426] of  Property_List
-)
-
-([KB_938545_Instance_427] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_428])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_428] of  Property_List
-)
-
-([KB_938545_Instance_429] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_430] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_431])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_431] of  Property_List
-
-	(properties
-		[KB_938545_Instance_432]
-		[KB_938545_Instance_436]
-		[KB_938545_Instance_440]
-		[KB_938545_Instance_444]
-		[KB_938545_Instance_448]))
-
-([KB_938545_Instance_432] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_433])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_433] of  Property_List
-
-	(properties
-		[KB_938545_Instance_434]
-		[KB_938545_Instance_435]))
-
-([KB_938545_Instance_434] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_435] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_436] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_437])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_437] of  Property_List
-
-	(properties
-		[KB_938545_Instance_438]
-		[KB_938545_Instance_439]))
-
-([KB_938545_Instance_438] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_439] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_440] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_441])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_441] of  Property_List
-
-	(properties
-		[KB_938545_Instance_442]
-		[KB_938545_Instance_443]))
-
-([KB_938545_Instance_442] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_443] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_444] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_445])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_445] of  Property_List
-
-	(properties
-		[KB_938545_Instance_446]
-		[KB_938545_Instance_447]))
-
-([KB_938545_Instance_446] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_447] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_448] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_449])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_449] of  Property_List
-
-	(properties
-		[KB_938545_Instance_450]
-		[KB_938545_Instance_451]))
-
-([KB_938545_Instance_450] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_451] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_454] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_455])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_455] of  Property_List
-)
-
-([KB_938545_Instance_456] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_457]
-		[KB_938545_Instance_458]))
-
-([KB_938545_Instance_457] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_458] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_459] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_460])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_460] of  Property_List
-
-	(properties
-		[KB_938545_Instance_461]
-		[KB_938545_Instance_462]
-		[KB_938545_Instance_463]
-		[KB_938545_Instance_464]
-		[KB_938545_Instance_465]
-		[KB_938545_Instance_466]))
-
-([KB_938545_Instance_461] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_462] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_463] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
-([KB_938545_Instance_464] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_465] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_466] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_467] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_468])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_468] of  Property_List
-)
-
-([KB_938545_Instance_471] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_472])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_472] of  Property_List
-)
-
-([KB_938545_Instance_473] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_474])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
-
-([KB_938545_Instance_474] of  Property_List
-)
-
-([KB_938545_Instance_475] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_476])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_476] of  Property_List
-)
-
-([KB_938545_Instance_477] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_478]))
-
-([KB_938545_Instance_478] of  Property_List
-)
-
-([KB_938545_Instance_479] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_480]))
-
-([KB_938545_Instance_480] of  Property_List
-)
-
-([KB_938545_Instance_481] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_482]))
-
-([KB_938545_Instance_482] of  Property_List
-)
-
-([KB_938545_Instance_483] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_484]))
-
-([KB_938545_Instance_484] of  Property_List
-)
-
-([KB_938545_Instance_485] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_486]))
-
-([KB_938545_Instance_486] of  Property_List
-)
-
-([KB_938545_Instance_487] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_488])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_488] of  Property_List
-)
-
-([KB_938545_Instance_489] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_490])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_490] of  Property_List
-)
-
-([KB_938545_Instance_491] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_492])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_492] of  Property_List
-)
-
-([KB_938545_Instance_493] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_494])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_494] of  Property_List
-)
-
-([KB_938545_Instance_495] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:SymmetricProperty")
-	(property_list [KB_938545_Instance_498])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_938545_Instance_498] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_499]
-		[KB_938545_Instance_501]
-		[KB_938545_Instance_505]
-		[KB_938545_Instance_506]
-		[KB_938545_Instance_508]
-		[KB_938545_Instance_510]
-		[KB_938545_Instance_512]
-		[KB_938545_Instance_513]
-		[KB_938545_Instance_537]
-		[KB_938545_Instance_539]
-		[KB_938545_Instance_542]
-		[KB_938545_Instance_550]
-		[KB_938545_Instance_554]
-		[KB_938545_Instance_556]
-		[KB_938545_Instance_558]
-		[KB_938545_Instance_560]
-		[KB_938545_Instance_562]
-		[KB_938545_Instance_564]
-		[KB_938545_Instance_566]
-		[KB_938545_Instance_568]
-		[KB_938545_Instance_570]
-		[KB_938545_Instance_572]
-		[KB_938545_Instance_574]
-		[KB_938545_Instance_576]
-		[KB_221055_Instance_50]
-		[KB_221055_Instance_54]))
-
-([KB_938545_Instance_499] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_500])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_500] of  Property_List
-)
-
-([KB_938545_Instance_501] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_505] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_506] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_507])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_507] of  Property_List
-)
-
-([KB_938545_Instance_508] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_509])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_509] of  Property_List
-)
-
-([KB_938545_Instance_510] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_511])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_511] of  Property_List
-)
-
-([KB_938545_Instance_512] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_513] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_514])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_514] of  Property_List
-
-	(properties
-		[KB_938545_Instance_515]
-		[KB_938545_Instance_519]
-		[KB_938545_Instance_523]
-		[KB_938545_Instance_527]
-		[KB_938545_Instance_531]))
-
-([KB_938545_Instance_515] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_516])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_516] of  Property_List
-
-	(properties
-		[KB_938545_Instance_517]
-		[KB_938545_Instance_518]))
-
-([KB_938545_Instance_517] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_518] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_519] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_520])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_520] of  Property_List
-
-	(properties
-		[KB_938545_Instance_521]
-		[KB_938545_Instance_522]))
-
-([KB_938545_Instance_521] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_522] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_523] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_524])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_524] of  Property_List
-
-	(properties
-		[KB_938545_Instance_525]
-		[KB_938545_Instance_526]))
-
-([KB_938545_Instance_525] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_526] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_527] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_528])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_528] of  Property_List
-
-	(properties
-		[KB_938545_Instance_529]
-		[KB_938545_Instance_530]))
-
-([KB_938545_Instance_529] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_530] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_531] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_532])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_532] of  Property_List
-
-	(properties
-		[KB_938545_Instance_533]
-		[KB_938545_Instance_534]))
-
-([KB_938545_Instance_533] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_534] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_537] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_538])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_538] of  Property_List
-)
-
-([KB_938545_Instance_539] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_540]
-		[KB_938545_Instance_541]))
-
-([KB_938545_Instance_540] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_541] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_542] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_543])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_543] of  Property_List
-
-	(properties
-		[KB_938545_Instance_544]
-		[KB_938545_Instance_545]
-		[KB_938545_Instance_546]
-		[KB_938545_Instance_547]
-		[KB_938545_Instance_548]
-		[KB_938545_Instance_549]))
-
-([KB_938545_Instance_544] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_545] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_546] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
-([KB_938545_Instance_547] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_548] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_549] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_550] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_551])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_551] of  Property_List
-)
-
-([KB_938545_Instance_554] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_555])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_555] of  Property_List
-)
-
-([KB_938545_Instance_556] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_557])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
-
-([KB_938545_Instance_557] of  Property_List
-)
-
-([KB_938545_Instance_558] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_559])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_559] of  Property_List
 )
 
 ([KB_938545_Instance_56] of  Property_List
@@ -5727,51 +4868,6 @@
 		[KB_221055_Instance_10]
 		[KB_221055_Instance_14]))
 
-([KB_938545_Instance_560] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_561]))
-
-([KB_938545_Instance_561] of  Property_List
-)
-
-([KB_938545_Instance_562] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_563]))
-
-([KB_938545_Instance_563] of  Property_List
-)
-
-([KB_938545_Instance_564] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_565]))
-
-([KB_938545_Instance_565] of  Property_List
-)
-
-([KB_938545_Instance_566] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_567]))
-
-([KB_938545_Instance_567] of  Property_List
-)
-
-([KB_938545_Instance_568] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_569]))
-
-([KB_938545_Instance_569] of  Property_List
-)
-
 ([KB_938545_Instance_57] of  Widget
 
 	(height 0)
@@ -5782,463 +4878,17 @@
 	(x 0)
 	(y 0))
 
-([KB_938545_Instance_570] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_571])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_571] of  Property_List
-)
-
-([KB_938545_Instance_572] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_573])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_573] of  Property_List
-)
-
-([KB_938545_Instance_574] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_575])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_575] of  Property_List
-)
-
-([KB_938545_Instance_576] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_577])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_577] of  Property_List
-)
-
-([KB_938545_Instance_578] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:TransitiveProperty")
-	(property_list [KB_938545_Instance_581])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
 ([KB_938545_Instance_58] of  Property_List
 )
-
-([KB_938545_Instance_581] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_582]
-		[KB_938545_Instance_584]
-		[KB_938545_Instance_588]
-		[KB_938545_Instance_589]
-		[KB_938545_Instance_591]
-		[KB_938545_Instance_593]
-		[KB_938545_Instance_595]
-		[KB_938545_Instance_596]
-		[KB_938545_Instance_620]
-		[KB_938545_Instance_622]
-		[KB_938545_Instance_625]
-		[KB_938545_Instance_633]
-		[KB_938545_Instance_637]
-		[KB_938545_Instance_639]
-		[KB_938545_Instance_641]
-		[KB_938545_Instance_643]
-		[KB_938545_Instance_645]
-		[KB_938545_Instance_647]
-		[KB_938545_Instance_649]
-		[KB_938545_Instance_651]
-		[KB_938545_Instance_653]
-		[KB_938545_Instance_655]
-		[KB_938545_Instance_657]
-		[KB_938545_Instance_659]
-		[KB_221055_Instance_58]
-		[KB_221055_Instance_62]))
-
-([KB_938545_Instance_582] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_583])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_583] of  Property_List
-)
-
-([KB_938545_Instance_584] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_588] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_589] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_590])
-	(width 0)
-	(x 0)
-	(y 0))
 
 ([KB_938545_Instance_59] of  Widget
 
 	(name ":SLOT-CONSTRAINTS")
 	(property_list [KB_933314_Instance_61]))
 
-([KB_938545_Instance_590] of  Property_List
-)
-
-([KB_938545_Instance_591] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_592])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_592] of  Property_List
-)
-
-([KB_938545_Instance_593] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_594])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_594] of  Property_List
-)
-
-([KB_938545_Instance_595] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_596] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_597])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_597] of  Property_List
-
-	(properties
-		[KB_938545_Instance_598]
-		[KB_938545_Instance_602]
-		[KB_938545_Instance_606]
-		[KB_938545_Instance_610]
-		[KB_938545_Instance_614]))
-
-([KB_938545_Instance_598] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_599])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_599] of  Property_List
-
-	(properties
-		[KB_938545_Instance_600]
-		[KB_938545_Instance_601]))
-
-([KB_938545_Instance_600] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_601] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_602] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_603])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_603] of  Property_List
-
-	(properties
-		[KB_938545_Instance_604]
-		[KB_938545_Instance_605]))
-
-([KB_938545_Instance_604] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_605] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_606] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_607])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_607] of  Property_List
-
-	(properties
-		[KB_938545_Instance_608]
-		[KB_938545_Instance_609]))
-
-([KB_938545_Instance_608] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_609] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_610] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_611])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_611] of  Property_List
-
-	(properties
-		[KB_938545_Instance_612]
-		[KB_938545_Instance_613]))
-
-([KB_938545_Instance_612] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_613] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_614] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_615])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_615] of  Property_List
-
-	(properties
-		[KB_938545_Instance_616]
-		[KB_938545_Instance_617]))
-
-([KB_938545_Instance_616] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_617] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_620] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_621])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_621] of  Property_List
-)
-
-([KB_938545_Instance_622] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_623]
-		[KB_938545_Instance_624]))
-
-([KB_938545_Instance_623] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_624] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_625] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_626])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_626] of  Property_List
-
-	(properties
-		[KB_938545_Instance_627]
-		[KB_938545_Instance_628]
-		[KB_938545_Instance_629]
-		[KB_938545_Instance_630]
-		[KB_938545_Instance_631]
-		[KB_938545_Instance_632]))
-
-([KB_938545_Instance_627] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_628] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_629] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
 ([KB_938545_Instance_63] of  Widget
 
 	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_630] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_631] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_632] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_633] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_634])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_634] of  Property_List
-)
-
-([KB_938545_Instance_637] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_638])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_638] of  Property_List
-)
-
-([KB_938545_Instance_639] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_640])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
 
 ([KB_938545_Instance_64] of  Widget
 
@@ -6250,119 +4900,8 @@
 	(x 0)
 	(y 0))
 
-([KB_938545_Instance_640] of  Property_List
-)
-
-([KB_938545_Instance_641] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_642])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_642] of  Property_List
-)
-
-([KB_938545_Instance_643] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_644]))
-
-([KB_938545_Instance_644] of  Property_List
-)
-
-([KB_938545_Instance_645] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_646]))
-
-([KB_938545_Instance_646] of  Property_List
-)
-
-([KB_938545_Instance_647] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_648]))
-
-([KB_938545_Instance_648] of  Property_List
-)
-
-([KB_938545_Instance_649] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_650]))
-
 ([KB_938545_Instance_65] of  Property_List
 )
-
-([KB_938545_Instance_650] of  Property_List
-)
-
-([KB_938545_Instance_651] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_652]))
-
-([KB_938545_Instance_652] of  Property_List
-)
-
-([KB_938545_Instance_653] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_654])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_654] of  Property_List
-)
-
-([KB_938545_Instance_655] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_656])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_656] of  Property_List
-)
-
-([KB_938545_Instance_657] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_658])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_658] of  Property_List
-)
-
-([KB_938545_Instance_659] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_660])
-	(width 0)
-	(x 0)
-	(y 0))
 
 ([KB_938545_Instance_66] of  Widget
 
@@ -6374,13 +4913,10 @@
 	(x 0)
 	(y 0))
 
-([KB_938545_Instance_660] of  Property_List
-)
-
 ([KB_938545_Instance_661] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:DeprecatedProperty")
+	(name "http://www.w3.org/2002/07/owl#DeprecatedProperty")
 	(property_list [KB_938545_Instance_664])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
@@ -6546,7 +5082,7 @@
 	(height 107)
 	(is_hidden FALSE)
 	(label "Comment")
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
 	(x 0)
@@ -6556,7 +5092,7 @@
 
 	(height 138)
 	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
+	(label "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(name ":OWL-EQUIVALENT-SLOTS")
 	(property_list [KB_938545_Instance_686])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
@@ -6584,8 +5120,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
+	(label "http://www.w3.org/2002/07/owl#sameAs")
+	(name "http://www.w3.org/2002/07/owl#sameAs")
 	(property_list [KB_938545_Instance_690])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -6615,8 +5151,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
+	(label "http://www.w3.org/2002/07/owl#differentFrom")
+	(name "http://www.w3.org/2002/07/owl#differentFrom")
 	(property_list [KB_938545_Instance_694])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -6643,8 +5179,8 @@
 
 	(height 137)
 	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
+	(label "http://www.w3.org/2002/07/owl#equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_698])
 	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
 	(width 286)
@@ -6797,7 +5333,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [KB_938545_Instance_723])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 300)
@@ -6823,7 +5359,7 @@
 ([KB_938545_Instance_726] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [KB_938545_Instance_727]))
 
 ([KB_938545_Instance_727] of  Property_List
@@ -6832,7 +5368,7 @@
 ([KB_938545_Instance_728] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [KB_938545_Instance_729]))
 
 ([KB_938545_Instance_729] of  Property_List
@@ -6841,7 +5377,7 @@
 ([KB_938545_Instance_730] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [KB_938545_Instance_731]))
 
 ([KB_938545_Instance_731] of  Property_List
@@ -6850,7 +5386,7 @@
 ([KB_938545_Instance_732] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [KB_938545_Instance_733]))
 
 ([KB_938545_Instance_733] of  Property_List
@@ -6859,7 +5395,7 @@
 ([KB_938545_Instance_734] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_735]))
 
 ([KB_938545_Instance_735] of  Property_List
@@ -6869,7 +5405,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:domain")
+	(name "http://www.w3.org/2000/01/rdf-schema#domain")
 	(property_list [KB_938545_Instance_737])
 	(width 0)
 	(x 0)
@@ -6882,7 +5418,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
+	(name "http://www.w3.org/2002/07/owl#equivalentProperty")
 	(property_list [KB_938545_Instance_739])
 	(width 0)
 	(x 0)
@@ -6895,7 +5431,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:range")
+	(name "http://www.w3.org/2000/01/rdf-schema#range")
 	(property_list [KB_938545_Instance_741])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
 	(width 200)
@@ -6921,7 +5457,7 @@
 ([KB_938545_Instance_744] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [KB_938545_Instance_745]))
 
 ([KB_938545_Instance_745] of  Property_List
@@ -6931,7 +5467,7 @@
 
 	(height 230)
 	(is_hidden FALSE)
-	(name "owl:imports")
+	(name "http://www.w3.org/2002/07/owl#imports")
 	(property_list [KB_938545_Instance_9])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadatatab.OWLNamespacesWidget")
 	(width 620)
@@ -6975,7 +5511,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentClass")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
 	(property_list [KB_941921_Instance_11])
 	(width 0)
 	(x 0)
@@ -6988,7 +5524,7 @@
 
 	(height 220)
 	(is_hidden FALSE)
-	(name "rdfs:subClassOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
 	(property_list [KB_941921_Instance_15])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.RDFSSubClassOfWidget")
 	(width 210)
@@ -7002,7 +5538,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:equivalentClass")
+	(name "http://www.w3.org/2002/07/owl#equivalentClass")
 	(property_list [KB_941921_Instance_3])
 	(width 0)
 	(x 0)
@@ -7015,7 +5551,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:subClassOf")
+	(name "http://www.w3.org/2000/01/rdf-schema#subClassOf")
 	(property_list [KB_941921_Instance_7])
 	(width 0)
 	(x 0)
@@ -7024,9 +5560,34 @@
 ([KB_941921_Instance_7] of  Property_List
 )
 
+([ontologiaMonarquia_ProjectKB_Class288] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ontologiaMonarquia_ProjectKB_Class289] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "%3ANAME"))
+
+([ontologiaMonarquia_ProjectKB_Class290] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([ontologiaMonarquia_ProjectKB_Class291] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([ontologiaMonarquia_ProjectKB_Class292] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "%3ANAME"))
+
 ([OWL_ProjectKB_Instance_3] of  Integer
 
-	(integer_value 430)
+	(integer_value 533)
 	(name "owl_build"))
 
 ([PAL_FORM_WIDGET] of  Widget
@@ -7044,130 +5605,238 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[STANDARD_SLOT_FORM_WIDGET]
-		[KB_713803_Instance_693]
-		[KB_313796_Instance_943]
-		[KB_938545_Instance_495]
-		[KB_713803_Instance_303]
-		[STANDARD_CLASS_FORM_WIDGET]
-		[KB_313796_Instance_852]
-		[Instance_1005]
-		[Instance_581]
-		[KB_301165_Instance_1013]
-		[KB_938545_Instance_412]
-		[KB_764103_Instance_545]
-		[KB_713803_Instance_390]
-		[KB_938545_Instance_329]
-		[Instance_443]
-		[PAL_FORM_WIDGET]
-		[KB_465546_Instance_567]
-		[KB_303942_Instance_68]
-		[KB_713803_Instance_780]
 		[KB_713803_Instance_477]
+		[KB_313796_Instance_852]
 		[KB_691299_Instance_398]
-		[STANDARD_FACET_FORM_WIDGET]
-		[KB_938545_Instance_578]
-		[KB_301165_Instance_856]
-		[KB_938545_Instance_661]
-		[KB_691299_Instance_537]
+		[PAL_FORM_WIDGET]
+		[Instance_581]
+		[KB_713803_Instance_693]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_938545_Instance_166]
+		[STANDARD_SLOT_FORM_WIDGET]
+		[KB_313796_Instance_943]
+		[KB_938545_Instance_661]
+		[KB_713803_Instance_648]
+		[KB_301165_Instance_856]
+		[KB_691299_Instance_537]
+		[KB_303942_Instance_68]
+		[KB_465546_Instance_567]
+		[STANDARD_FACET_FORM_WIDGET]
+		[KB_713803_Instance_780]
 		[KB_868747_Instance_76]
-		[KB_713803_Instance_648])
-	(default_cls_metaclass "owl:Class")
+		[STANDARD_CLASS_FORM_WIDGET]
+		[KB_713803_Instance_303]
+		[Instance_1005]
+		[KB_938545_Instance_329]
+		[KB_764103_Instance_545]
+		[KB_301165_Instance_1013]
+		[Instance_443]
+		[KB_713803_Instance_390])
+	(default_cls_metaclass "http://www.w3.org/2002/07/owl#Class")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget")
-	(default_slot_metaclass "owl:ObjectProperty")
+	(default_slot_metaclass "http://www.w3.org/2002/07/owl#ObjectProperty")
 	(hidden_classes
-		"rdf:XMLLiteral"
-		"xsd:anyURI"
-		"xsd:gYear"
-		"xsd:negativeInteger"
-		"xsd:hexBinary"
-		"xsd:NOTATION"
+		":DIRECT-DOMAIN"
+		"http://www.w3.org/2003/11/swrl#Imp"
+		"http://protege.stanford.edu/plugins/owl/protege#PAL-RANGE"
+		"http://www.w3.org/2001/XMLSchema#anySimpleType"
+		"http://www.w3.org/2001/XMLSchema#NOTATION"
+		":MODIFIER"
+		"http://protege.stanford.edu/plugins/owl/protege#SLOT-CONSTRAINTS"
+		"http://www.w3.org/2000/01/rdf-schema#Container"
+		":SLOT-NUMERIC-MINIMUM"
+		"http://www.w3.org/2001/XMLSchema#integer"
+		"http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"
+		":NUMERIC-MAXIMUM"
+		"http://www.w3.org/2003/11/swrl#propertyPredicate"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+		":ANNOTATION-TEXT"
+		"http://www.w3.org/2003/11/swrl#arguments"
+		"http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
+		":ANNOTATED-INSTANCE"
+		"http://www.w3.org/2003/11/swrl#BuiltinAtom"
+		"http://www.w3.org/2002/07/owl#Ontology"
+		":OWL-ONTOLOGY-POINTER-CLASS"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+		":VALUE-TYPE"
+		"http://www.w3.org/2002/07/owl#incompatibleWith"
+		"http://www.w3.org/2002/07/owl#CardinalityRestriction"
+		"http://www.w3.org/2002/07/owl#inverseOf"
+		"http://protege.stanford.edu/plugins/owl/protege#inferredType"
+		"http://www.w3.org/2002/07/owl#cardinality"
+		"http://www.w3.org/2001/XMLSchema#Name"
+		":ANNOTATION"
+		"http://www.w3.org/2002/07/owl#valuesFrom"
+		"http://www.w3.org/2003/11/swrl#body"
+		":STANDARD-SLOT"
 		":OWL-ANONYMOUS-ROOT"
-		"protege:classificationStatus"
-		"xsd:integer"
-		"xsd:unsignedShort"
-		"owl:allValuesFrom"
-		"rdfs:member"
-		"protege:inferredSuperclassOf"
-		"xsd:base64Binary"
-		"owl:Class"
-		"rdfs:Container"
-		"owl:Ontology"
-		"owl:DataRange"
+		":MAXIMUM-CARDINALITY"
+		"http://protege.stanford.edu/plugins/owl/protege#ExternalResource"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"
+		"http://www.w3.org/2001/XMLSchema#NMTOKEN"
+		"http://www.w3.org/2002/07/owl#UnionClass"
+		"http://www.w3.org/2002/07/owl#sameAs"
+		":DIRECT-TYPE"
+		":NAME"
+		"http://www.w3.org/2002/07/owl#equivalentClass"
+		"http://www.w3.org/2002/07/owl#FunctionalProperty"
+		"http://protege.stanford.edu/plugins/owl/protege#inferredSubclassOf"
+		":PAL-DESCRIPTION"
+		"http://www.w3.org/2003/11/swrl#SameIndividualAtom"
+		"http://www.w3.org/2001/XMLSchema#anyURI"
+		"http://www.w3.org/2002/07/owl#AnonymousClass"
+		"http://www.w3.org/2002/07/owl#MinCardinalityRestriction"
+		"http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+		":CLASS"
+		"http://www.w3.org/2002/07/owl#complementOf"
+		":ROLE"
+		":DOCUMENTATION-IN-FRAME"
+		"http://www.w3.org/2002/07/owl#IntersectionClass"
+		"http://www.w3.org/2002/07/owl#TransitiveProperty"
+		"http://www.w3.org/2000/01/rdf-schema#range"
+		"http://www.w3.org/2001/XMLSchema#gYearMonth"
+		":CREATOR"
+		"http://www.w3.org/2002/07/owl#ComplementClass"
+		":ASSOCIATED-FACET"
+		":DOCUMENTATION"
+		":DIRECT-SUPERCLASSES"
+		":CREATION-TIMESTAMP"
+		":META-CLASS"
+		"http://www.w3.org/2000/01/rdf-schema#Class"
+		"http://www.w3.org/2000/01/rdf-schema#domain"
+		":DIRECT-SUBSLOTS"
+		":MODIFICATION-TIMESTAMP"
+		"http://www.w3.org/2001/XMLSchema#gYear"
+		"http://www.w3.org/2001/XMLSchema#gMonthDay"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#value"
+		"http://www.w3.org/2001/XMLSchema#normalizedString"
+		"http://protege.stanford.edu/plugins/owl/protege#FROM"
+		"http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
+		"http://protege.stanford.edu/plugins/owl/protege#classificationStatus"
+		"http://www.w3.org/2002/07/owl#someValuesFrom"
+		"http://protege.stanford.edu/plugins/owl/protege#inferredSuperclassOf"
+		"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+		"http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"
+		"http://www.w3.org/2003/11/swrl#dataRange"
+		"http://www.w3.org/2002/07/owl#AllDifferent"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+		"http://www.w3.org/2003/11/swrl#Variable"
+		":DIRECT-INSTANCES"
+		"http://www.w3.org/2002/07/owl#unionOf"
+		"http://protege.stanford.edu/plugins/owl/protege#DIRECTED-BINARY-RELATION"
+		":SLOT"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+		"http://www.w3.org/2002/07/owl#minCardinality"
+		"http://www.w3.org/2002/07/owl#allValuesFrom"
+		":INVERSE"
+		"http://www.w3.org/2002/07/owl#priorVersion"
+		"http://www.w3.org/2003/11/swrl#DataRangeAtom"
+		"http://www.w3.org/2001/XMLSchema#token"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"
+		":DIRECT-TEMPLATE-SLOTS"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
+		"http://www.w3.org/2002/07/owl#DataRange"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+		"http://www.w3.org/2002/07/owl#onProperty"
+		"http://protege.stanford.edu/plugins/owl/protege#ExternalProperty"
+		"http://protege.stanford.edu/plugins/owl/protege#PAL-STATEMENT"
+		"http://protege.stanford.edu/plugins/owl/protege#PAL-CONSTRAINT"
+		"http://www.w3.org/2003/11/swrl#ClassAtom"
+		"http://www.w3.org/2001/XMLSchema#IDREF"
+		"http://www.w3.org/2002/07/owl#SymmetricProperty"
+		"http://www.w3.org/2002/07/owl#differentFrom"
+		"http://protege.stanford.edu/plugins/owl/protege#PAL-NAME"
+		"http://www.w3.org/2001/XMLSchema#gMonth"
+		"http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"
+		":OWL-CLASS"
+		"http://www.w3.org/2001/XMLSchema#unsignedShort"
+		"http://www.w3.org/2001/XMLSchema#unsignedInt"
+		":STANDARD-FACET"
+		":STANDARD-CLASS"
+		"http://www.w3.org/2002/07/owl#Restriction"
+		"http://www.w3.org/2002/07/owl#MaxCardinalityRestriction"
+		"http://www.w3.org/2001/XMLSchema#NCName"
+		"http://www.w3.org/2002/07/owl#Class"
+		"http://www.w3.org/2001/XMLSchema#ID"
+		"http://www.w3.org/2002/07/owl#imports"
+		"http://www.w3.org/2000/01/rdf-schema#member"
+		"http://www.w3.org/2002/07/owl#LogicalClass"
+		"http://www.w3.org/2003/11/swrl#Builtin"
+		"http://www.w3.org/2001/XMLSchema#negativeInteger"
+		"http://www.w3.org/2003/11/swrl#head"
+		"http://www.w3.org/2003/11/swrl#builtin"
+		"http://www.w3.org/2001/XMLSchema#decimal"
+		"http://www.w3.org/2003/11/swrl#AtomList"
+		"http://www.w3.org/2002/07/owl#equivalentProperty"
+		"http://www.w3.org/2000/01/rdf-schema#Literal"
+		"http://www.w3.org/2003/11/swrl#classPredicate"
+		"http://www.w3.org/2001/XMLSchema#long"
+		"http://www.w3.org/2002/07/owl#SomeValuesFromRestriction"
+		":SLOT-VALUE-TYPE"
+		"http://www.w3.org/2002/07/owl#HasValueRestriction"
+		"http://www.w3.org/2001/XMLSchema#duration"
+		"http://www.w3.org/2001/XMLSchema#positiveInteger"
+		"http://www.w3.org/2002/07/owl#oneOf"
+		":VALUES"
+		":ASSOCIATED-SLOT"
+		"http://www.w3.org/2001/XMLSchema#language"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+		"http://www.w3.org/2002/07/owl#versionInfo"
+		"http://www.w3.org/2001/XMLSchema#base64Binary"
+		"http://www.w3.org/2001/XMLSchema#short"
+		"http://www.w3.org/2002/07/owl#maxCardinality"
+		"http://protege.stanford.edu/plugins/owl/protege#PAL-DESCRIPTION"
+		"http://www.w3.org/2002/07/owl#AllValuesFromRestriction"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+		"http://www.w3.org/2001/XMLSchema#hexBinary"
+		"http://www.w3.org/2002/07/owl#DeprecatedClass"
+		"http://www.w3.org/2002/07/owl#DatatypeProperty"
+		"http://www.w3.org/2001/XMLSchema#double"
+		"http://www.w3.org/2001/XMLSchema#unsignedByte"
+		"http://www.w3.org/2002/07/owl#distinctMembers"
+		":SLOT-NUMERIC-MAXIMUM"
+		":INSTANCE-ANNOTATION"
+		":SLOT-MINIMUM-CARDINALITY"
+		"http://www.w3.org/2002/07/owl#AnnotationProperty"
+		":DIRECT-SUBCLASSES"
+		"http://www.w3.org/2002/07/owl#DeprecatedProperty"
+		"http://www.w3.org/2002/07/owl#ObjectProperty"
+		"http://www.w3.org/2001/XMLSchema#ENTITY"
+		"http://www.w3.org/2001/XMLSchema#byte"
+		"http://www.w3.org/2001/XMLSchema#float"
+		":NUMERIC-MINIMUM"
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"
+		"http://protege.stanford.edu/plugins/owl/protege#TO"
+		"http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+		":RELATION"
+		"http://www.w3.org/2000/01/rdf-schema#Datatype"
+		"http://www.w3.org/2001/XMLSchema#QName"
+		"http://www.w3.org/2003/11/swrl#Atom"
+		"http://www.w3.org/2002/07/owl#EnumeratedClass"
+		"http://www.w3.org/2002/07/owl#disjointWith"
+		"http://www.w3.org/2001/XMLSchema#unsignedLong"
+		":MINIMUM-CARDINALITY"
 		":TO"
-		"xsd:gMonthDay"
-		"xsd:NMTOKEN"
-		"xsd:unsignedInt"
-		"xsd:QName"
-		"owl:FunctionalProperty"
-		"xsd:long"
-		"owl:onProperty"
-		"protege:ExternalResource"
+		":SLOT-DEFAULTS"
 		":SYSTEM-CLASS"
-		"xsd:language"
-		"xsd:positiveInteger"
-		"owl:someValuesFrom"
-		"owl:DeprecatedClass"
-		"owl:DatatypeProperty"
-		"xsd:duration"
-		"owl:DeprecatedProperty"
-		"owl:ObjectProperty"
-		"owl:AnnotationProperty"
-		"xsd:unsignedLong"
-		"xsd:unsignedByte"
-		"protege:inferredSubclassOf"
-		"rdfs:Class"
-		"rdf:first"
-		"xsd:short"
-		"rdf:List"
-		"rdf:predicate"
-		"owl:hasValue"
-		"rdf:rest"
-		"xsd:double"
-		"xsd:decimal"
-		"rdf:subject"
-		"rdf:value"
-		"owl:SymmetricProperty"
-		"xsd:Name"
-		"owl:sameAs"
-		"xsd:byte"
-		"owl:AllDifferent"
-		"owl:differentFrom"
-		"owl:Nothing"
-		"rdf:Property"
-		"owl:InverseFunctionalProperty"
-		"owl:cardinality"
-		"xsd:nonNegativeInteger"
-		"rdf:Statement"
-		"rdfs:Literal"
-		":FROM"
-		"owl:disjointWith"
-		"xsd:anySimpleType"
-		"owl:minCardinality"
-		"xsd:ID"
-		"xsd:gDay"
-		"xsd:gYearMonth"
-		"owl:distinctMembers"
-		"xsd:NCName"
-		"xsd:nonPositiveInteger"
-		"rdfs:Datatype"
-		"owl:TransitiveProperty"
-		":DIRECTED-BINARY-RELATION"
-		"xsd:token"
-		"xsd:IDREF"
-		"xsd:ENTITY"
-		"xsd:normalizedString"
-		"xsd:gMonth"
-		"rdf:type"
-		"owl:oneOf"
-		"owl:maxCardinality"
-		"rdf:object")
+		":SLOT-MAXIMUM-CARDINALITY"
+		":DEFAULTS"
+		"http://www.w3.org/2001/XMLSchema#gDay"
+		"http://www.w3.org/2003/11/swrl#argument2"
+		"http://www.w3.org/2003/11/swrl#argument1"
+		":FACET"
+		":SLOT-VALUES"
+		"http://www.w3.org/2002/07/owl#intersectionOf"
+		"http://www.w3.org/2002/07/owl#Nothing"
+		"http://www.w3.org/2002/07/owl#hasValue")
 	(journaling_enabled FALSE)
 	(next_frame_number 0)
 	(options [Instance_48])
+	(property_map [KB_325529_Class0])
 	(sources [SOURCES])
 	(tabs
 		[Instance_2534]
@@ -7204,7 +5873,9 @@
 		[OWL_ProjectKB_Instance_3]
 		[KB_444675_Instance_0]
 		[KB_632156_Instance_0]
-		[KB_200919_Instance_0]))
+		[KB_325529_Class4]
+		[empty.owl_ProjectKB_Class5]
+		[empty.owl_ProjectKB_Class6]))
 
 ([STANDARD_CLASS_FORM_WIDGET] of  Widget
 
@@ -7239,7 +5910,7 @@
 ([XY_Instance_1001] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_1002]))
 
 ([XY_Instance_1002] of  Property_List
@@ -7248,7 +5919,7 @@
 ([XY_Instance_1003] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_1004]))
 
 ([XY_Instance_1004] of  Property_List
@@ -7257,7 +5928,7 @@
 ([XY_Instance_1005] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_1006]))
 
 ([XY_Instance_1006] of  Property_List
@@ -7267,7 +5938,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_1016])
 	(width 0)
 	(x 0)
@@ -7478,7 +6149,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_1093])
 	(width 0)
 	(x 0)
@@ -7491,7 +6162,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_1097])
 	(width 0)
 	(x 0)
@@ -7504,7 +6175,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_1099])
 	(width 0)
 	(x 0)
@@ -7517,7 +6188,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [XY_Instance_1101])
 	(width 0)
 	(x 0)
@@ -7530,7 +6201,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_118])
 	(width 0)
 	(x 0)
@@ -7544,7 +6215,6 @@
 	(properties
 		[XY_Instance_200]
 		[XY_Instance_210]
-		[XY_Instance_217]
 		[XY_Instance_235]
 		[KB_635552_Instance_10]
 		[KB_635552_Instance_12]
@@ -7590,7 +6260,7 @@
 ([XY_Instance_212] of  String
 
 	(name "vertical_stretcher")
-	(string_value "owl:imports"))
+	(string_value "http://www.w3.org/2002/07/owl#imports"))
 
 ([XY_Instance_217] of  Widget
 
@@ -7609,7 +6279,7 @@
 
 	(height 230)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_236])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 620)
@@ -7762,7 +6432,7 @@
 
 	(height 160)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_461])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 560)
@@ -8002,7 +6672,7 @@
 
 	(height 170)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_539])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 600)
@@ -8150,7 +6820,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_586])
 	(width 0)
 	(x 0)
@@ -8219,7 +6889,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_667])
 	(width 0)
 	(x 0)
@@ -8259,7 +6929,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_673])
 	(width 0)
 	(x 0)
@@ -8272,7 +6942,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_675])
 	(width 0)
 	(x 0)
@@ -8298,7 +6968,7 @@
 
 	(height 160)
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [XY_Instance_679])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
 	(width 300)
@@ -8347,7 +7017,7 @@
 
 	(height 160)
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [XY_Instance_688])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.OWLMetadataWidget")
 	(width 300)
@@ -8361,7 +7031,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:member")
+	(name "http://www.w3.org/2000/01/rdf-schema#member")
 	(property_list [XY_Instance_690])
 	(width 0)
 	(x 0)
@@ -8374,7 +7044,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdf:value")
+	(name "http://www.w3.org/1999/02/22-rdf-syntax-ns#value")
 	(property_list [XY_Instance_692])
 	(width 0)
 	(x 0)
@@ -8387,7 +7057,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_694])
 	(width 0)
 	(x 0)
@@ -8703,7 +7373,7 @@
 ([XY_Instance_770] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_771]))
 
 ([XY_Instance_771] of  Property_List
@@ -8712,7 +7382,7 @@
 ([XY_Instance_772] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_773]))
 
 ([XY_Instance_773] of  Property_List
@@ -8730,7 +7400,7 @@
 ([XY_Instance_776] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_777]))
 
 ([XY_Instance_777] of  Property_List
@@ -8739,7 +7409,7 @@
 ([XY_Instance_778] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [XY_Instance_779]))
 
 ([XY_Instance_779] of  Property_List
@@ -8811,7 +7481,7 @@
 
 	(height 180)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_813])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
 	(width 550)
@@ -8883,7 +7553,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_91])
 	(width 0)
 	(x 0)
@@ -8906,7 +7576,7 @@
 ([XY_Instance_906] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
+	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
 	(property_list [XY_Instance_907]))
 
 ([XY_Instance_907] of  Property_List
@@ -8918,7 +7588,7 @@
 ([XY_Instance_910] of  Widget
 
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_911]))
 
 ([XY_Instance_911] of  Property_List
@@ -8927,7 +7597,7 @@
 ([XY_Instance_912] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_913]))
 
 ([XY_Instance_913] of  Property_List
@@ -8936,7 +7606,7 @@
 ([XY_Instance_914] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:comment")
+	(name "http://www.w3.org/2000/01/rdf-schema#comment")
 	(property_list [XY_Instance_915]))
 
 ([XY_Instance_915] of  Property_List
@@ -8945,7 +7615,7 @@
 ([XY_Instance_916] of  Widget
 
 	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
+	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
 	(property_list [XY_Instance_917]))
 
 ([XY_Instance_917] of  Property_List
@@ -8955,7 +7625,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_921])
 	(width 0)
 	(x 0)
@@ -9072,7 +7742,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "rdfs:label")
+	(name "http://www.w3.org/2000/01/rdf-schema#label")
 	(property_list [XY_Instance_97])
 	(width 0)
 	(x 0)
@@ -9082,7 +7752,7 @@
 
 	(height 120)
 	(is_hidden FALSE)
-	(name "protege:inferredType")
+	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
 	(property_list [XY_Instance_968])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstanceListWidget")
 	(width 200)
@@ -9164,7 +7834,7 @@
 
 	(height 0)
 	(is_hidden FALSE)
-	(name "owl:versionInfo")
+	(name "http://www.w3.org/2002/07/owl#versionInfo")
 	(property_list [XY_Instance_99])
 	(width 0)
 	(x 0)

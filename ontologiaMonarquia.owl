@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1402876120.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1402876120.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Padres">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#Familia"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="progenitor_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Ubicacion"/>
+  <owl:Class rdf:ID="Nieta">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Nietos"/>
+          <owl:Class rdf:ID="femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Abuelos">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#progenitor_de"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="#Padres"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Madre">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Padres"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Nietos">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:ID="Hijos"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="sucesor_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Hijo">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Hijos"/>
+          <owl:Class rdf:ID="masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Abuelo">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Abuelos"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Marido">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Matrimonio"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#masculino">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Genero"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="tituloNobiliario"/>
+  <owl:Class rdf:ID="Hija">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Hijos"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Abuela">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Abuelos"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Mujer">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Matrimonio"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Matrimonio">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#Familia"/>
+            <owl:onProperty>
+              <owl:SymmetricProperty rdf:ID="pareja_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Foto"/>
+  <owl:Class rdf:ID="Nieto">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Nietos"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#femenino">
+    <rdfs:subClassOf rdf:resource="#Genero"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Hijos">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#sucesor_de"/>
+            </owl:onProperty>
+            <owl:someValuesFrom rdf:resource="#Familia"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Padre">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Padres"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#progenitor_de">
+    <rdfs:domain rdf:resource="#Familia"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#sucesor_de"/>
+    </owl:inverseOf>
+    <rdfs:range rdf:resource="#Familia"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="aparece">
+    <rdfs:range rdf:resource="#Familia"/>
+    <rdfs:domain rdf:resource="#Foto"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#sucesor_de">
+    <rdfs:range rdf:resource="#Familia"/>
+    <owl:inverseOf rdf:resource="#progenitor_de"/>
+    <rdfs:domain rdf:resource="#Familia"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="lugarFoto">
+    <rdfs:domain rdf:resource="#Foto"/>
+    <rdfs:range rdf:resource="#Ubicacion"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="urlFoto">
+    <rdfs:domain rdf:resource="#Foto"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:SymmetricProperty rdf:ID="hermano_de">
+    <rdfs:domain rdf:resource="#Familia"/>
+    <owl:inverseOf rdf:resource="#hermano_de"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Familia"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="#pareja_de">
+    <rdfs:domain rdf:resource="#Familia"/>
+    <rdfs:range rdf:resource="#Familia"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#pareja_de"/>
+  </owl:SymmetricProperty>
+  <Ubicacion rdf:ID="Ubicacion_63"/>
+  <tituloNobiliario rdf:ID="Rey"/>
+  <Ubicacion rdf:ID="Otros"/>
+  <Ubicacion rdf:ID="Acto_Oficial"/>
+  <tituloNobiliario rdf:ID="Principe"/>
+  <tituloNobiliario rdf:ID="Princesa"/>
+  <Ubicacion rdf:ID="Despacho"/>
+  <tituloNobiliario rdf:ID="Infanta"/>
+  <Foto rdf:ID="Foto_1">
+    <aparece>
+      <Familia rdf:ID="Irene_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Letizia_Ortiz"/>
+    </aparece>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/Foto1.jpg</urlFoto>
+    <aparece>
+      <Familia rdf:ID="Miguel_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Cristina_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Jaime_Marichalar"/>
+    </aparece>
+    <lugarFoto>
+      <Ubicacion rdf:ID="Palacio"/>
+    </lugarFoto>
+    <aparece>
+      <Familia rdf:ID="Victoria_Marichalar"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Sofia_Grecia"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Elena_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Sofia_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Juan_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Felipe_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Juan_Carlos_I"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Leonor_Borbon"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Pablo_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Iñaki_Urdangarin"/>
+    </aparece>
+    <aparece>
+      <Familia rdf:ID="Felipe_Marichalar"/>
+    </aparece>
+  </Foto>
+  <tituloNobiliario rdf:ID="Reina"/>
+  <Ubicacion rdf:ID="Boda"/>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->
