@@ -95,7 +95,7 @@ public class Conector {
 		    Iterator<String> it = ontologia.listInstances("Foto");
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece");
 		    	boolean coincide = false;
 		    	while (personajes.hasNext() && !coincide){
 		    		String persona = recortarNombre(personajes.next());
