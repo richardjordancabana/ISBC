@@ -13,7 +13,7 @@ import es.ucm.fdi.gaia.ontobridge.test.gui.PnlSelectInstance;
 public class Conector {
 	
 	//nuestra url
-	private static final String URL = "http://www.owl-ontologies.com/Ontology1402519238.owl";
+	private static final String URL = "http://www.owl-ontologies.com/Ontology1402876120.owl";
 	
 	private OntoBridge ontologia;
 	
@@ -22,7 +22,7 @@ public class Conector {
 		ontologia = new OntoBridge();
 		ontologia.initWithPelletReasoner();// usaremos el razonador de pellet
 		//nuestro fichero owl
-		OntologyDocument mainOnto = new OntologyDocument(URL,"file:Ejercicio2.owl");
+		OntologyDocument mainOnto = new OntologyDocument(URL,"file:ontologiaMonarquia.owl");
 		ArrayList<OntologyDocument> subOntologies = new ArrayList<OntologyDocument>();	
 		ontologia.loadOntology(mainOnto, subOntologies, false);
 		
@@ -117,9 +117,9 @@ public class Conector {
 		
 		public List<String> getInfoPersonal(String cargo,String persona,String lugar){
 						
-			List<String> lugares = getPropiedadImagen(lugar,"esta_en");
-			List<String> personas = getPropiedadImagen(persona,"aparece_en");
-			List<String> cargos = getImagenesConsulta(cargo,"tiene_titulo_de");	
+			List<String> lugares = getPropiedadImagen(lugar,"lugarFoto");
+			List<String> personas = getPropiedadImagen(persona,"aparece");
+	//		List<String> cargos = getImagenesConsulta(cargo,"tiene_titulo_de");	
 			Iterator<String> itImagenes = ontologia.listInstances("Foto");
 			List<String> imagenes = new ArrayList<String>();
 			while (itImagenes.hasNext()){
@@ -150,12 +150,12 @@ public class Conector {
 //crea una propiedad entre dos instancias
 		public void marcar(String origen, String prop,String destino) {
 			ontologia.createOntProperty(origen,prop,destino);
-			ontologia.save("Ejercicio2.owl");	
+			ontologia.save("ontologiaMonarquia.owl");	
 		}
 // elimina una propiedad entre dos instancias
 		public void desmarcar(String origen, String prop, String destino) {
 			ontologia.deleteOntProperty(origen,prop,destino);
-			ontologia.save("Ejercicio2.owl");
+			ontologia.save("ontologiaMonarquia.owl");
 		}
 
 		public List<String> getDatosImagen( String imagen,String propiedad){
@@ -176,7 +176,7 @@ public class Conector {
 		    //cogemos todas las fotos y preguntamos si salen 3 o mas miembros de la familia
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> familiares =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	Iterator<String> familiares =  ontologia.listPropertyValue(imagen,"aparece");
 		    	boolean parar = false;	int numFamiliares = 0;
 		    	while (familiares.hasNext() && !parar){
 		    		String nombreFamiliar = recortarNombre(familiares.next());
@@ -197,7 +197,7 @@ public class Conector {
 		    Iterator<String> it = ontologia.listInstances("Foto");
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece");
 		    	boolean rey = false;
 		    	while (personajes.hasNext() && !rey){
 		    		String nombre= recortarNombre(personajes.next());
@@ -214,7 +214,7 @@ public class Conector {
 		    Iterator<String> it = ontologia.listInstances("Foto");
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"esta_en");
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"lugarFoto");
 		    	boolean despacho = false;
 		    	while (personajes.hasNext() && !despacho){
 		    		String lugar = recortarNombre(personajes.next());
@@ -231,12 +231,12 @@ public class Conector {
 		    Iterator<String> it = ontologia.listInstances("Foto");
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece");
 	 	    	List<String> personajesFoto = new ArrayList<String>();
 	 	    	while (personajes.hasNext()){
 	 	    		String persona = recortarNombre(personajes.next());
 	 	    		personajesFoto.add(persona);
-	 	    		Iterator<String> itParejas = ontologia.listPropertyValue(persona,"tiene_pareja");
+	 	    		Iterator<String> itParejas = ontologia.listPropertyValue(persona,"pareja_de");
 	 	    		boolean hayPareja = false;
 	 	    		while (itParejas.hasNext() && !hayPareja){
 	 	    			String pareja = recortarNombre(itParejas.next());
@@ -256,12 +256,12 @@ public class Conector {
 		    Iterator<String> it = ontologia.listInstances("Foto");
 		    while (it.hasNext()){
 		    	String imagen = it.next();
-		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece_en");
+		    	Iterator<String> personajes =  ontologia.listPropertyValue(imagen,"aparece");
 	 	    	List<String> personajesFoto = new ArrayList<String>();
 	 	    	while (personajes.hasNext()){
 	 	    		String persona = recortarNombre(personajes.next());
 	 	    		personajesFoto.add(persona);
-	 	    		Iterator<String> itHermanos = ontologia.listPropertyValue(persona,"es_hermanoa_de");
+	 	    		Iterator<String> itHermanos = ontologia.listPropertyValue(persona,"hermano_de");
 	 	    		boolean hayHermano = false;
 	 	    		while (itHermanos.hasNext() && !hayHermano){
 	 	    			String hermano = recortarNombre(itHermanos.next());
