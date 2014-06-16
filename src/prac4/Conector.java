@@ -83,20 +83,7 @@ public class Conector {
 		*/
 
 		
-/*	
- *  LUGARES?!!
-  public List<String> dameLugares(){
- 
-		List<String> personas = new ArrayList<String>();
-		Iterator<String> iterador = ob.listInstances("Lugares");
-		
-		while (iterador.hasNext()){
-			String nombre = iterador.next();
-			personas.add(nombre);	
-		}
-		
-		return personas;
-	}*/
+
 	
 	
 //crea una propiedad entre dos instancias
@@ -202,7 +189,7 @@ public class Conector {
 		    }
 		   return img	;	}
 
-		// corregir hermanoa		
+				
 		public List<String> getImagenesHermanos(){
 			List<String> img = new ArrayList<String>();
 		    Iterator<String> it = ontologia.listInstances("Foto");
