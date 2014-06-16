@@ -11,43 +11,12 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://www.owl-ontologies.com/Ontology1402876120.owl">
   <owl:Ontology rdf:about=""/>
-  <owl:Class rdf:ID="Padres">
+  <owl:Class rdf:ID="Tia">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:ID="Familia"/>
-          <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="#Familia"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="progenitor_de"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:Class rdf:ID="Ubicacion"/>
-  <owl:Class rdf:ID="Nieta">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:ID="Nietos"/>
+          <owl:Class rdf:ID="Tios"/>
           <owl:Class rdf:ID="femenino"/>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:Class rdf:ID="Abuelos">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#Familia"/>
-          <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="#Padres"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#progenitor_de"/>
-            </owl:onProperty>
-          </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -56,7 +25,34 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#Padres"/>
+          <owl:Class rdf:ID="Padres"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Abuelos">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:about="#Padres"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="progenitor_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Nieta">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Nietos"/>
           <owl:Class rdf:about="#femenino"/>
         </owl:intersectionOf>
       </owl:Class>
@@ -79,22 +75,12 @@
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>
-  <owl:Class rdf:ID="Hijo">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#Hijos"/>
-          <owl:Class rdf:ID="masculino"/>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
   <owl:Class rdf:ID="Abuelo">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Class rdf:about="#Abuelos"/>
-          <owl:Class rdf:about="#masculino"/>
+          <owl:Class rdf:ID="masculino"/>
         </owl:intersectionOf>
       </owl:Class>
     </owl:equivalentClass>
@@ -109,27 +95,26 @@
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>
+  <owl:Class rdf:ID="Sobrino">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:ID="Sobrinos"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
   <owl:Class rdf:about="#masculino">
     <rdfs:subClassOf>
       <owl:Class rdf:ID="Genero"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:ID="tituloNobiliario"/>
   <owl:Class rdf:ID="Hija">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Class rdf:about="#Hijos"/>
-          <owl:Class rdf:about="#femenino"/>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:Class rdf:ID="Abuela">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#Abuelos"/>
           <owl:Class rdf:about="#femenino"/>
         </owl:intersectionOf>
       </owl:Class>
@@ -160,7 +145,67 @@
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>
-  <owl:Class rdf:ID="Foto"/>
+  <owl:Class rdf:about="#Tios">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                      <owl:Class rdf:ID="Hermanos"/>
+                      <owl:Restriction>
+                        <owl:onProperty>
+                          <owl:ObjectProperty rdf:about="#sucesor_de"/>
+                        </owl:onProperty>
+                        <owl:someValuesFrom rdf:resource="#Familia"/>
+                      </owl:Restriction>
+                    </owl:intersectionOf>
+                  </owl:Class>
+                </owl:someValuesFrom>
+                <owl:onProperty>
+                  <owl:ObjectProperty rdf:about="#pareja_de"/>
+                </owl:onProperty>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:someValuesFrom>
+                  <owl:Class>
+                    <owl:intersectionOf rdf:parseType="Collection">
+                      <owl:Class rdf:about="#Familia"/>
+                      <owl:Restriction>
+                        <owl:someValuesFrom>
+                          <owl:Class>
+                            <owl:intersectionOf rdf:parseType="Collection">
+                              <owl:Class rdf:about="#Familia"/>
+                              <owl:Restriction>
+                                <owl:someValuesFrom rdf:resource="#Familia"/>
+                                <owl:onProperty>
+                                  <owl:ObjectProperty rdf:about="#progenitor_de"/>
+                                </owl:onProperty>
+                              </owl:Restriction>
+                            </owl:intersectionOf>
+                          </owl:Class>
+                        </owl:someValuesFrom>
+                        <owl:onProperty>
+                          <owl:ObjectProperty rdf:about="#progenitor_de"/>
+                        </owl:onProperty>
+                      </owl:Restriction>
+                    </owl:intersectionOf>
+                  </owl:Class>
+                </owl:someValuesFrom>
+                <owl:onProperty>
+                  <owl:ObjectProperty rdf:about="#sucesor_de"/>
+                </owl:onProperty>
+              </owl:Restriction>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
   <owl:Class rdf:ID="Nieto">
     <owl:equivalentClass>
       <owl:Class>
@@ -173,6 +218,16 @@
   </owl:Class>
   <owl:Class rdf:about="#femenino">
     <rdfs:subClassOf rdf:resource="#Genero"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Sobrina">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Sobrinos"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
   </owl:Class>
   <owl:Class rdf:about="#Hijos">
     <owl:equivalentClass>
@@ -189,6 +244,131 @@
       </owl:Class>
     </owl:equivalentClass>
   </owl:Class>
+  <owl:Class rdf:about="#Sobrinos">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#sucesor_de"/>
+            </owl:onProperty>
+            <owl:someValuesFrom>
+              <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="#Familia"/>
+                <owl:onProperty>
+                  <owl:ObjectProperty rdf:ID="hermano_de"/>
+                </owl:onProperty>
+              </owl:Restriction>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Padres">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="#Familia"/>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#progenitor_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Ubicacion"/>
+  <owl:Class rdf:ID="Hermana">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Hermanos"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="#Hermanos">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#Familia"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hermano_de"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Familia"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <owl:Class rdf:about="#Familia"/>
+                  <owl:Restriction>
+                    <owl:someValuesFrom rdf:resource="#Familia"/>
+                    <owl:onProperty>
+                      <owl:ObjectProperty rdf:about="#progenitor_de"/>
+                    </owl:onProperty>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:about="#sucesor_de"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Hijo">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Hijos"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="tituloNobiliario"/>
+  <owl:Class rdf:ID="Tio">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Tios"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Abuela">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Abuelos"/>
+          <owl:Class rdf:about="#femenino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Hermano">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Hermanos"/>
+          <owl:Class rdf:about="#masculino"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:ID="Foto"/>
   <owl:Class rdf:ID="Padre">
     <owl:equivalentClass>
       <owl:Class>
@@ -206,7 +386,7 @@
     </owl:inverseOf>
     <rdfs:range rdf:resource="#Familia"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="hermano_de">
+  <owl:ObjectProperty rdf:about="#hermano_de">
     <rdfs:domain rdf:resource="#Familia"/>
     <owl:inverseOf rdf:resource="#hermano_de"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
@@ -464,13 +644,6 @@
     <aparece rdf:resource="#Irene_Urdangarin"/>
     <aparece rdf:resource="#Iñaki_Urdangarin"/>
   </Foto>
-  <Foto rdf:ID="Foto9">
-    <aparece rdf:resource="#Juan_Carlos_I"/>
-    <aparece rdf:resource="#Felipe_Borbon"/>
-    <lugarFoto rdf:resource="#Acto_Oficial"/>
-    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >./fotos/foto9.png</urlFoto>
-  </Foto>
   <Foto rdf:ID="Foto2">
     <aparece rdf:resource="#Miguel_Urdangarin"/>
     <aparece rdf:resource="#Sofia_Borbon"/>
@@ -491,6 +664,13 @@
     <aparece rdf:resource="#Cristina_Borbon"/>
     <aparece rdf:resource="#Irene_Urdangarin"/>
     <aparece rdf:resource="#Pablo_Urdangarin"/>
+  </Foto>
+  <Foto rdf:ID="Foto9">
+    <aparece rdf:resource="#Juan_Carlos_I"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
+    <lugarFoto rdf:resource="#Acto_Oficial"/>
+    <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >./fotos/foto9.png</urlFoto>
   </Foto>
 </rdf:RDF>
 
