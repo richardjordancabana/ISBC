@@ -131,6 +131,7 @@ public class Ventana1 extends JFrame {
 		comboBoxProp = new JComboBox(new String[]{"aparece","lugarFoto"});
 		comboBoxProp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				loadCBItems();
 				mostrarFoto((String)comboBoxFoto.getSelectedItem());
 			}
 		});
@@ -277,11 +278,11 @@ public class Ventana1 extends JFrame {
 	}
 	
 	public void loadCBItems(){
-		List<String> items = conector.getInstanciasClase("Lugar");
-		if (comboBoxProp.equals("aparece")){
-			;
-		} else if (comboBoxProp.equals("lugarFoto")) {
+		List<String> items = conector.getInstanciasClase("Familia");
+		if (comboBoxProp.getSelectedIndex() == 0) {
 			items = conector.getInstanciasClase("Familia");
+		} else if (comboBoxProp.getSelectedIndex() == 1) {
+			items = conector.getInstanciasClase("Ubicacion");
 		}		
 		comboBoxAparece.removeAllItems();
 		for (int i=0;i<items.size();i++)

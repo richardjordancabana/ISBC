@@ -102,22 +102,7 @@ public class Conector {
 		    }
 		    return img;
 		}
-		
-		public List<String> getInfoPersonal(String cargo,String persona,String lugar){
-						
-			List<String> lugares = getPropiedadImagen(lugar,"lugarFoto");
-			List<String> personas = getPropiedadImagen(persona,"aparece");
-	//		List<String> cargos = getImagenesConsulta(cargo,"tiene_titulo_de");	
-			Iterator<String> itImagenes = ontologia.listInstances("Foto");
-			List<String> imagenes = new ArrayList<String>();
-			while (itImagenes.hasNext()){
-			    	String imagen = recortarNombre(itImagenes.next());
-			    	if (lugares.contains(imagen) && personas.contains(imagen) && cargos.contains(imagen))
-			    		imagenes.add(imagen);
-			 }
-			
-			return imagenes;
-		}		
+
 		
 /*	
  *  LUGARES?!!
