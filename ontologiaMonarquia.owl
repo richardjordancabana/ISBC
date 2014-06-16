@@ -417,34 +417,138 @@
   </owl:DatatypeProperty>
   <Foto rdf:ID="Foto6">
     <aparece>
-      <Familia rdf:ID="Juan_Urdangarin"/>
+      <Familia rdf:ID="Juan_Urdangarin">
+        <sucesor_de>
+          <Familia rdf:ID="Iñaki_Urdangarin">
+            <pareja_de>
+              <Familia rdf:ID="Cristina_Borbon">
+                <pareja_de rdf:resource="#Iñaki_Urdangarin"/>
+                <progenitor_de>
+                  <Familia rdf:ID="Pablo_Urdangarin">
+                    <sucesor_de rdf:resource="#Iñaki_Urdangarin"/>
+                    <sucesor_de rdf:resource="#Cristina_Borbon"/>
+                    <hermano_de>
+                      <Familia rdf:ID="Miguel_Urdangarin">
+                        <hermano_de rdf:resource="#Pablo_Urdangarin"/>
+                        <hermano_de rdf:resource="#Juan_Urdangarin"/>
+                        <hermano_de>
+                          <Familia rdf:ID="Irene_Urdangarin">
+                            <hermano_de rdf:resource="#Pablo_Urdangarin"/>
+                            <hermano_de rdf:resource="#Miguel_Urdangarin"/>
+                            <hermano_de rdf:resource="#Juan_Urdangarin"/>
+                            <sucesor_de rdf:resource="#Iñaki_Urdangarin"/>
+                            <sucesor_de rdf:resource="#Cristina_Borbon"/>
+                          </Familia>
+                        </hermano_de>
+                        <sucesor_de rdf:resource="#Iñaki_Urdangarin"/>
+                        <sucesor_de rdf:resource="#Cristina_Borbon"/>
+                      </Familia>
+                    </hermano_de>
+                    <hermano_de rdf:resource="#Juan_Urdangarin"/>
+                    <hermano_de rdf:resource="#Irene_Urdangarin"/>
+                  </Familia>
+                </progenitor_de>
+                <progenitor_de rdf:resource="#Juan_Urdangarin"/>
+                <hermano_de>
+                  <Familia rdf:ID="Felipe_Borbon">
+                    <hermano_de>
+                      <Familia rdf:ID="Elena_Borbon">
+                        <sucesor_de>
+                          <Familia rdf:ID="Juan_Carlos_I">
+                            <progenitor_de rdf:resource="#Felipe_Borbon"/>
+                            <progenitor_de rdf:resource="#Elena_Borbon"/>
+                            <progenitor_de rdf:resource="#Cristina_Borbon"/>
+                            <pareja_de>
+                              <Familia rdf:ID="Sofia_Grecia">
+                                <progenitor_de rdf:resource="#Felipe_Borbon"/>
+                                <progenitor_de rdf:resource="#Elena_Borbon"/>
+                                <progenitor_de rdf:resource="#Cristina_Borbon"/>
+                                <pareja_de rdf:resource="#Juan_Carlos_I"/>
+                              </Familia>
+                            </pareja_de>
+                          </Familia>
+                        </sucesor_de>
+                        <sucesor_de rdf:resource="#Sofia_Grecia"/>
+                        <hermano_de rdf:resource="#Felipe_Borbon"/>
+                        <hermano_de rdf:resource="#Cristina_Borbon"/>
+                        <progenitor_de>
+                          <Familia rdf:ID="Felipe_Marichalar">
+                            <hermano_de>
+                              <Familia rdf:ID="Victoria_Marichalar">
+                                <hermano_de rdf:resource="#Felipe_Marichalar"/>
+                                <sucesor_de>
+                                  <Familia rdf:ID="Jaime_Marichalar">
+                                    <progenitor_de rdf:resource="#Victoria_Marichalar"/>
+                                    <progenitor_de rdf:resource="#Felipe_Marichalar"/>
+                                  </Familia>
+                                </sucesor_de>
+                                <sucesor_de rdf:resource="#Elena_Borbon"/>
+                              </Familia>
+                            </hermano_de>
+                            <sucesor_de rdf:resource="#Jaime_Marichalar"/>
+                            <sucesor_de rdf:resource="#Elena_Borbon"/>
+                          </Familia>
+                        </progenitor_de>
+                        <progenitor_de rdf:resource="#Victoria_Marichalar"/>
+                      </Familia>
+                    </hermano_de>
+                    <hermano_de rdf:resource="#Cristina_Borbon"/>
+                    <pareja_de>
+                      <Familia rdf:ID="Letizia_Ortiz">
+                        <pareja_de rdf:resource="#Felipe_Borbon"/>
+                        <progenitor_de>
+                          <Familia rdf:ID="Sofia_Borbon">
+                            <hermano_de>
+                              <Familia rdf:ID="Leonor_Borbon">
+                                <hermano_de rdf:resource="#Sofia_Borbon"/>
+                                <sucesor_de rdf:resource="#Letizia_Ortiz"/>
+                                <sucesor_de rdf:resource="#Felipe_Borbon"/>
+                              </Familia>
+                            </hermano_de>
+                            <sucesor_de rdf:resource="#Letizia_Ortiz"/>
+                            <sucesor_de rdf:resource="#Felipe_Borbon"/>
+                          </Familia>
+                        </progenitor_de>
+                        <progenitor_de rdf:resource="#Leonor_Borbon"/>
+                      </Familia>
+                    </pareja_de>
+                    <sucesor_de rdf:resource="#Juan_Carlos_I"/>
+                    <sucesor_de rdf:resource="#Sofia_Grecia"/>
+                    <progenitor_de rdf:resource="#Leonor_Borbon"/>
+                    <progenitor_de rdf:resource="#Sofia_Borbon"/>
+                  </Familia>
+                </hermano_de>
+                <hermano_de rdf:resource="#Elena_Borbon"/>
+                <sucesor_de rdf:resource="#Juan_Carlos_I"/>
+                <progenitor_de rdf:resource="#Miguel_Urdangarin"/>
+                <sucesor_de rdf:resource="#Sofia_Grecia"/>
+                <progenitor_de rdf:resource="#Irene_Urdangarin"/>
+              </Familia>
+            </pareja_de>
+            <progenitor_de rdf:resource="#Juan_Urdangarin"/>
+            <progenitor_de rdf:resource="#Pablo_Urdangarin"/>
+            <progenitor_de rdf:resource="#Miguel_Urdangarin"/>
+            <progenitor_de rdf:resource="#Irene_Urdangarin"/>
+          </Familia>
+        </sucesor_de>
+        <sucesor_de rdf:resource="#Cristina_Borbon"/>
+        <hermano_de rdf:resource="#Pablo_Urdangarin"/>
+        <hermano_de rdf:resource="#Miguel_Urdangarin"/>
+        <hermano_de rdf:resource="#Irene_Urdangarin"/>
+      </Familia>
     </aparece>
-    <aparece>
-      <Familia rdf:ID="Sofia_Borbon"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Leonor_Borbon"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Victoria_Marichalar"/>
-    </aparece>
+    <aparece rdf:resource="#Sofia_Borbon"/>
+    <aparece rdf:resource="#Leonor_Borbon"/>
+    <aparece rdf:resource="#Victoria_Marichalar"/>
     <lugarFoto>
       <Ubicacion rdf:ID="Palacio"/>
     </lugarFoto>
-    <aparece>
-      <Familia rdf:ID="Miguel_Urdangarin"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Irene_Urdangarin"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Pablo_Urdangarin"/>
-    </aparece>
+    <aparece rdf:resource="#Miguel_Urdangarin"/>
+    <aparece rdf:resource="#Irene_Urdangarin"/>
+    <aparece rdf:resource="#Pablo_Urdangarin"/>
     <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >./fotos/foto6.jpg</urlFoto>
-    <aparece>
-      <Familia rdf:ID="Felipe_Marichalar"/>
-    </aparece>
+    <aparece rdf:resource="#Felipe_Marichalar"/>
   </Foto>
   <Foto rdf:ID="Foto17">
     <lugarFoto>
@@ -452,22 +556,14 @@
     </lugarFoto>
     <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >./fotos/foto17.JPG</urlFoto>
-    <aparece>
-      <Familia rdf:ID="Juan_Carlos_I"/>
-    </aparece>
+    <aparece rdf:resource="#Juan_Carlos_I"/>
   </Foto>
   <tituloNobiliario rdf:ID="Rey"/>
   <Foto rdf:ID="Foto7">
-    <aparece>
-      <Familia rdf:ID="Sofia_Grecia"/>
-    </aparece>
+    <aparece rdf:resource="#Sofia_Grecia"/>
     <aparece rdf:resource="#Juan_Carlos_I"/>
-    <aparece>
-      <Familia rdf:ID="Letizia_Ortiz"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Felipe_Borbon"/>
-    </aparece>
+    <aparece rdf:resource="#Letizia_Ortiz"/>
+    <aparece rdf:resource="#Felipe_Borbon"/>
     <urlFoto rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >./fotos/foto7.png</urlFoto>
     <lugarFoto>
@@ -504,16 +600,10 @@
   <Foto rdf:ID="Foto15">
     <aparece rdf:resource="#Juan_Carlos_I"/>
     <aparece rdf:resource="#Sofia_Borbon"/>
-    <aparece>
-      <Familia rdf:ID="Cristina_Borbon"/>
-    </aparece>
+    <aparece rdf:resource="#Cristina_Borbon"/>
     <aparece rdf:resource="#Letizia_Ortiz"/>
-    <aparece>
-      <Familia rdf:ID="Elena_Borbon"/>
-    </aparece>
-    <aparece>
-      <Familia rdf:ID="Iñaki_Urdangarin"/>
-    </aparece>
+    <aparece rdf:resource="#Elena_Borbon"/>
+    <aparece rdf:resource="#Iñaki_Urdangarin"/>
     <lugarFoto>
       <Ubicacion rdf:ID="Otros"/>
     </lugarFoto>
@@ -582,9 +672,7 @@
     <aparece rdf:resource="#Felipe_Borbon"/>
     <aparece rdf:resource="#Felipe_Marichalar"/>
     <aparece rdf:resource="#Iñaki_Urdangarin"/>
-    <aparece>
-      <Familia rdf:ID="Jaime_Marichalar"/>
-    </aparece>
+    <aparece rdf:resource="#Jaime_Marichalar"/>
     <aparece rdf:resource="#Irene_Urdangarin"/>
     <aparece rdf:resource="#Elena_Borbon"/>
     <aparece rdf:resource="#Juan_Carlos_I"/>
