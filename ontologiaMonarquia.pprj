@@ -1,4 +1,4 @@
-; Mon Jun 16 06:01:07 CEST 2014
+; Mon Jun 16 06:06:19 CEST 2014
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 533")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[ontologiaMonarquia_ProjectKB_Class168]
-		[ontologiaMonarquia_ProjectKB_Class169]
-		[ontologiaMonarquia_ProjectKB_Class170]
-		[ontologiaMonarquia_ProjectKB_Class171]
-		[ontologiaMonarquia_ProjectKB_Class172]))
+		[ontologiaMonarquia_ProjectKB_Class173]
+		[ontologiaMonarquia_ProjectKB_Class174]
+		[ontologiaMonarquia_ProjectKB_Class175]
+		[ontologiaMonarquia_ProjectKB_Class176]
+		[ontologiaMonarquia_ProjectKB_Class177]))
 
 ([CLSES_TAB] of  Widget
 
@@ -5362,33 +5362,33 @@
 ([ontologiaMonarquia_ProjectKB_Class16] of  Property_List
 )
 
-([ontologiaMonarquia_ProjectKB_Class168] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "%3ANAME"))
-
-([ontologiaMonarquia_ProjectKB_Class169] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
 ([ontologiaMonarquia_ProjectKB_Class17] of  Widget
 
 	(is_hidden TRUE)
 	(property_list [ontologiaMonarquia_ProjectKB_Class18])
 	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
 
-([ontologiaMonarquia_ProjectKB_Class170] of  String
+([ontologiaMonarquia_ProjectKB_Class173] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Class")
+	(string_value "%3ANAME"))
+
+([ontologiaMonarquia_ProjectKB_Class174] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([ontologiaMonarquia_ProjectKB_Class175] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([ontologiaMonarquia_ProjectKB_Class171] of  String
+([ontologiaMonarquia_ProjectKB_Class176] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([ontologiaMonarquia_ProjectKB_Class172] of  String
+([ontologiaMonarquia_ProjectKB_Class177] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Thing")
 	(string_value "%3ANAME"))
